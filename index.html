@@ -1,0 +1,2112 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Digital - We Build Digital Success Stories</title>
+    <meta name="description"
+        content="Looking for affordable, agency-quality web design and digital marketing? JK Digital Solutions helps startups and small businesses grow online with proven results.">
+    <meta name="title" content="JK Digital Solutions | Affordable Web & Digital Marketing Services">
+    <!-- Indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jkdigitalsolutions.com/">
+
+    <!-- Structured data (Schema) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JK Digital Solutions",
+    "url": "https://www.jkdigitalsolutions.com",
+    "logo": "https://www.jkdigitalsolutions.com/logo.png",
+    "description": "Affordable web design and digital marketing agency helping startups and small businesses grow online.",
+    "foundingDate": "2020",
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <link rel="shortcut icon" href="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" type="image/x-icon">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4169E1',
+                            dark: '#3557CC',
+                        },
+                        dark: {
+                            DEFAULT: '#1F2937',
+                            900: '#111827',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-slow': 'float 8s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Modal backdrop blur */
+        .modal-backdrop {
+            backdrop-filter: blur(8px);
+        }
+
+        /* Custom scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #5B71F5;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #4A5FE4;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                        <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                    </div>
+                    <span class="text-l font-bold text-gray-900">JK Digital <br> <span
+                            style="color: grey;">Solutions</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="text-primary border-b-2 border-primary font-semibold text-dark-900 hover:text-primary font-medium transition-colors">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">About</a></li>
+                    <li><a href="services.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a></li>
+                    <li><a href="projects.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a></li>
+                    <li><a href="testimonial.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a></li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a></li>
+                    <li><a href="contact.html"
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-0.5">Get
+                            Started</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-900 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="lg:hidden hidden mt-4 pb-4">
+                <ul class="space-y-4">
+                    <li><a href="index.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html" class="block text-primary font-semibold">About</a></li>
+                    <li><a href="services.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+                    </li>
+                    <li><a href="testimonial.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block bg-primary text-white px-6 py-2.5 rounded-lg font-semibold text-center hover:bg-primary-dark transition-all">Get
+                            Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="relative bg-gradient-to-br from-blue-50 to-gray-50 overflow-hidden py-16 lg:py-24">
+        <!-- Floating Background Circle -->
+        <div
+            class="absolute -top-40 -right-40 w-96 h-96 bg-blue-100 rounded-full opacity-50 blur-3xl animate-float-slow">
+        </div>
+
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
+                <!-- Left Content -->
+                <div class="animate-fade-in-up">
+                    <!-- Badge -->
+                    <div class="inline-flex items-center space-x-2 bg-white px-5 py-2 rounded-full shadow-md mb-6">
+                        <i class="fas fa-bolt text-primary"></i>
+                        <span class="text-sm font-medium text-gray-900">We Build Digital Success Stories</span>
+                    </div>
+
+                    <!-- Heading -->
+                    <h1 class="text-4xl md:text-5xl lg:text-6xl font-extrabold text-gray-900 leading-tight mb-6">
+                        We Build Digital<br>Success Stories
+                    </h1>
+
+                    <!-- Description -->
+                    <p class="text-base md:text-lg text-gray-600 mb-8 max-w-xl leading-relaxed">
+                        Empowering businesses with cutting-edge digital solutions. From web development to marketing
+                        strategies, we transform your vision into measurable success.
+                    </p>
+
+                    <!-- Buttons -->
+                    <div class="flex flex-col sm:flex-row gap-4 mb-10">
+                        <a href="contact.html"
+                            class="bg-primary text-white px-7 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-xl hover:-translate-y-0.5 text-center">Get
+                            Started Today</a>
+                        <a href="#wework"
+                            class="border-2 border-gray-300 text-gray-900 px-7 py-3 rounded-lg font-semibold hover:border-gray-900 hover:bg-gray-900 hover:text-white transition-all text-center">Learn
+                            How We Work</a>
+                    </div>
+
+                    <!-- Stats -->
+                    <div class="flex flex-col sm:flex-row gap-6">
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center">
+                                <i class="fas fa-chart-line text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 font-medium">Growth Tracking</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-3">
+                            <div class="w-12 h-12 bg-white rounded-xl shadow-md flex items-center justify-center">
+                                <i class="fas fa-users text-primary text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="text-sm text-gray-600 font-medium">Expert Team</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Content - Image -->
+                <div class="relative animate-fade-in-up">
+                    <div class="relative rounded-3xl overflow-hidden shadow-2xl animate-float">
+                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=800&fit=crop"
+                            alt="Team Collaboration" class="w-full h-auto">
+                    </div>
+
+                    <!-- Floating Badge 1 -->
+                    <div
+                        class="absolute top-8 -right-4 lg:right-0 bg-white px-5 py-4 rounded-2xl shadow-2xl animate-float hidden sm:flex items-center space-x-3">
+                        <div class="w-11 h-11 bg-blue-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-rocket text-primary text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900">Fast Launch</h4>
+                            <p class="text-xs text-gray-600">Quick delivery</p>
+                        </div>
+                    </div>
+
+                    <!-- Floating Badge 2 -->
+                    <div class="absolute bottom-12 -left-4 lg:left-0 bg-white px-5 py-4 rounded-2xl shadow-2xl animate-float hidden sm:flex items-center space-x-3"
+                        style="animation-delay: 1s;">
+                        <div class="w-11 h-11 bg-green-100 rounded-xl flex items-center justify-center">
+                            <i class="fas fa-check-circle text-green-500 text-lg"></i>
+                        </div>
+                        <div>
+                            <h4 class="text-sm font-bold text-gray-900">Proven Results</h4>
+                            <p class="text-xs text-gray-600">500+ projects</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trusted By Section -->
+    <section class="bg-gray-900 py-10 lg:py-12">
+        <div class="container mx-auto px-6 lg:px-8">
+            <div class="flex flex-wrap justify-center lg:justify-between items-center gap-8 lg:gap-12">
+                <div
+                    class="text-gray-500 hover:text-gray-300 transition-colors font-semibold text-sm lg:text-base tracking-wider cursor-pointer">
+                    FACEBOOK</div>
+                <div
+                    class="text-gray-500 hover:text-gray-300 transition-colors font-semibold text-sm lg:text-base tracking-wider cursor-pointer">
+                    NETFLIX</div>
+                <div
+                    class="text-gray-500 hover:text-gray-300 transition-colors font-semibold text-sm lg:text-base tracking-wider cursor-pointer">
+                    SHOPIFY</div>
+                <div
+                    class="text-gray-500 hover:text-gray-300 transition-colors font-semibold text-sm lg:text-base tracking-wider cursor-pointer">
+                    SPOTIFY</div>
+                <div
+                    class="text-gray-500 hover:text-gray-300 transition-colors font-semibold text-sm lg:text-base tracking-wider cursor-pointer">
+                    MAILCHIMP</div>
+                <div
+                    class="text-gray-500 hover:text-gray-300 transition-colors font-semibold text-sm lg:text-base tracking-wider cursor-pointer">
+                    MICROSOFT</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="services" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12 lg:mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">Solutions That Drive
+                    Results</h2>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">We offer a full suite of digital
+                    services designed to elevate your brand</p>
+            </div>
+
+            <!-- Solutions Grid -->
+            <section class="py-16 lg:py-24 bg-white">
+                <div class="container mx-auto px-6 lg:px-8">
+                    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                        <!-- Service 1: Website Development -->
+                        <div onclick="openModal('website')"
+                            class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group"
+                            id="openModalBtn">
+                            <div
+                                class="w-16 h-16 bg-blue-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-globe text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Website Development</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Custom websites built with modern technologies. We create fast, responsive, and
+                                user-friendly
+                                solutions that help your business stand out.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center space-x-2 text-primary font-semibold hover:space-x-3 transition-all group">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+
+                        <!-- Service 2: SEO Optimization -->
+                        <div onclick="openModal('seo')"
+                            class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
+                            <div
+                                class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-search text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">SEO Optimization</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Boost your visibility on search engines and attract more organic traffic with our proven
+                                optimization strategies.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center space-x-2 text-primary font-semibold hover:space-x-3 transition-all group">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+
+                        <!-- Service 3: Shopify Marketing -->
+                        <div onclick="openModal('shopify')"
+                            class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
+                            <div
+                                class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-shopping-cart text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Shopify Marketing & Customization</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Complete Shopify store setups, customization, and marketing strategies to maximize your
+                                online
+                                sales.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center space-x-2 text-primary font-semibold hover:space-x-3 transition-all group">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+
+                        <!-- Service 4: Digital Marketing -->
+                        <div onclick="openModal('marketing')"
+                            class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
+                            <div
+                                class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-chart-line text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Digital Marketing</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Data-driven marketing campaigns that reach your target audience and maximize your return
+                                on
+                                investment.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center space-x-2 text-primary font-semibold hover:space-x-3 transition-all group">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+
+                        <!-- Service 5: Email Marketing -->
+                        <div onclick="openModal('email')"
+                            class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
+                            <div
+                                class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
+                                <i class="fas fa-envelope text-white text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-gray-900 mb-4">Email Marketing</h3>
+                            <p class="text-gray-600 mb-6 leading-relaxed">
+                                Engage your audience and drive conversions with strategic email marketing campaigns and
+                                automation.
+                            </p>
+                            <a href="#"
+                                class="inline-flex items-center space-x-2 text-primary font-semibold hover:space-x-3 transition-all group">
+                                <span>View Details</span>
+                                <i class="fas fa-arrow-right text-sm"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+    <!-- Priority Section -->
+    <section class="py-16 lg:py-24 bg-gray-900 text-white">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12 lg:mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-4">Your Success Is Our Priority</h2>
+                <p class="text-base md:text-lg text-gray-400 max-w-2xl mx-auto">We're committed to delivering
+                    exceptional results</p>
+            </div>
+
+            <!-- Priority Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 mb-16 lg:mb-20">
+                <!-- Card 1 -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 rounded-2xl p-8 hover:bg-opacity-10 hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-14 h-14 bg-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-lightbulb text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Industry-Leading Solutions</h3>
+                    <p class="text-gray-400 leading-relaxed">We leverage the latest technologies to keep you ahead of
+                        the competition.</p>
+                </div>
+
+                <!-- Card 2 -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 rounded-2xl p-8 hover:bg-opacity-10 hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-14 h-14 bg-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-headset text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">24/7 Dedicated Support</h3>
+                    <p class="text-gray-400 leading-relaxed">Our expert team is always available to assist you around
+                        the clock.</p>
+                </div>
+
+                <!-- Card 3 -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 rounded-2xl p-8 hover:bg-opacity-10 hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-14 h-14 bg-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-database text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Data-Driven Approach</h3>
+                    <p class="text-gray-400 leading-relaxed">Every decision backed by analytics ensuring measurable
+                        results.</p>
+                </div>
+
+                <!-- Card 4 -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 rounded-2xl p-8 hover:bg-opacity-10 hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-14 h-14 bg-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-certificate text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">24/7 Consultation</h3>
+                    <p class="text-gray-400 leading-relaxed">Get expert guidance on strategy to drive business growth.
+                    </p>
+                </div>
+
+                <!-- Card 5 -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 rounded-2xl p-8 hover:bg-opacity-10 hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-14 h-14 bg-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-expand-arrows-alt text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">Scalable Solutions</h3>
+                    <p class="text-gray-400 leading-relaxed">Our solutions grow with your business for long-term
+                        success.</p>
+                </div>
+
+                <!-- Card 6 -->
+                <div
+                    class="bg-white bg-opacity-5 backdrop-blur-sm border border-white border-opacity-10 rounded-2xl p-8 hover:bg-opacity-10 hover:-translate-y-2 transition-all duration-300 animate-on-scroll">
+                    <div class="w-14 h-14 bg-blue-500 bg-opacity-20 rounded-xl flex items-center justify-center mb-6">
+                        <i class="fas fa-life-ring text-primary text-2xl"></i>
+                    </div>
+                    <h3 class="text-lg font-bold mb-3">High-Value Support</h3>
+                    <p class="text-gray-400 leading-relaxed">Ongoing optimization and support to maximize your ROI.</p>
+                </div>
+            </div>
+
+            <!-- Stats -->
+            <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12 text-center">
+                <div class="animate-on-scroll">
+                    <h3
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2">
+                        50+</h3>
+                    <p class="text-gray-400 text-sm md:text-base">Projects Completed</p>
+                </div>
+                <div class="animate-on-scroll">
+                    <h3
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2">
+                        35+</h3>
+                    <p class="text-gray-400 text-sm md:text-base">Happy Clients</p>
+                </div>
+                <div class="animate-on-scroll">
+                    <h3
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2">
+                        6+</h3>
+                    <p class="text-gray-400 text-sm md:text-base">Years Experience</p>
+                </div>
+                <div class="animate-on-scroll">
+                    <h3
+                        class="text-4xl md:text-5xl lg:text-6xl font-extrabold bg-gradient-to-r from-blue-500 to-purple-600 bg-clip-text text-transparent mb-2">
+                        98%</h3>
+                    <p class="text-gray-400 text-sm md:text-base">Success Rate</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How We Work Section -->
+    <section class="py-16 lg:py-24 bg-white" id="wework">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12 lg:mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">How We Work</h2>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">A streamlined process designed to
+                    deliver exceptional results</p>
+            </div>
+
+            <!-- Process Steps -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
+                <!-- Step 1 -->
+                <div class="text-center animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold relative z-10">
+                            1</div>
+                        <div
+                            class="hidden lg:block absolute top-1/2 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary to-blue-300">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Discovery</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Understanding your business goals and target
+                        audience to create strategy.</p>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="text-center animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold relative z-10">
+                            2</div>
+                        <div
+                            class="hidden lg:block absolute top-1/2 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary to-blue-300">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Design & Plan</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Developing concepts that align with your brand and
+                        objectives.</p>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="text-center animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold relative z-10">
+                            3</div>
+                        <div
+                            class="hidden lg:block absolute top-1/2 left-1/2 w-full h-0.5 bg-gradient-to-r from-primary to-blue-300">
+                        </div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Development</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Bringing your vision to life with cutting-edge
+                        development.</p>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="text-center animate-on-scroll">
+                    <div class="relative mb-6">
+                        <div
+                            class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto text-white text-2xl font-bold">
+                            4</div>
+                    </div>
+                    <h3 class="text-lg font-bold text-gray-900 mb-3">Launch & Support</h3>
+                    <p class="text-gray-600 text-sm leading-relaxed">Deploying your solution with ongoing support for
+                        success.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="portfolio" class="py-16 lg:py-24 bg-gray-50">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12 lg:mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">Featured Projects</h2>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">Explore our latest work and success
+                    stories</p>
+            </div>
+
+            <!-- Projects Grid -->
+            <!-- Projects Grid -->
+            <section class="max-w-7xl mx-auto px-6 pb-20">
+                <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+                    <!-- Projects will be dynamically inserted here -->
+                </div>
+
+                <!-- View All Button -->
+                <div class="text-center animate-on-scroll" style="margin-bottom: 20px;">
+                    <a href="projects.html"
+                        class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-xl hover:-translate-y-0.5 inline-block">View
+                        All Projects</a>
+                </div>
+
+                <!-- Bottom CTA Section -->
+                <div
+                    class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-16 text-center text-white relative overflow-hidden">
+                    <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
+
+                    <div class="relative z-10">
+                        <h2 class="text-4xl font-bold mb-4">
+                            Ready to Be Our Next Success Story?
+                        </h2>
+                        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                            Let us bring your vision to life. Start your project today and join our growing list of
+                            satisfied
+                            clients.
+                        </p>
+                        <a href="contact.html"
+                            class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition">
+                            Start Your Project
+                            <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Modal -->
+            <div id="projectModal"
+                class="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-50 hidden items-center justify-center p-4 overflow-y-auto">
+                <div id="modalContent"
+                    class="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto custom-scrollbar relative">
+                    <!-- Content will be dynamically inserted -->
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="py-16 lg:py-24 bg-white">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Section Header -->
+            <div class="text-center mb-12 lg:mb-16 animate-on-scroll">
+                <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold text-gray-900 mb-4">What Our Clients Say</h2>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto">Don't just take our word for it—hear
+                    from businesses we've helped</p>
+            </div>
+
+            <!-- Testimonial Card -->
+            <div class="max-w-4xl mx-auto animate-on-scroll">
+                <div class="bg-white rounded-3xl shadow-xl p-8 lg:p-12 text-center">
+                    <!-- Stars -->
+                    <div class="flex justify-center space-x-1 text-yellow-400 text-xl mb-6">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+
+                    <!-- Quote -->
+                    <p class="text-lg md:text-xl text-gray-900 italic leading-relaxed mb-8">
+                        "JK Digital Solutions transformed our online presence completely. Their team's expertise in web
+                        development and SEO helped us increase traffic by 300% in just six months. Highly recommended!"
+                    </p>
+
+                    <!-- Author -->
+                    <div class="flex items-center justify-center space-x-4">
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=100&h=100&fit=crop"
+                            alt="Author" class="w-14 h-14 rounded-full">
+                        <div class="text-left">
+                            <h4 class="text-base font-bold text-gray-900">John Davidson</h4>
+                            <p class="text-sm text-gray-600">CEO, TechStart Inc.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dots Navigation -->
+                <div class="flex justify-center space-x-2 mt-8">
+                    <button class="w-10 h-2.5 bg-primary rounded-full"></button>
+                    <button class="w-2.5 h-2.5 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors"></button>
+                    <button class="w-2.5 h-2.5 bg-gray-300 rounded-full hover:bg-gray-400 transition-colors"></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Fiverr Section -->
+    <!-- <section class="py-16 lg:py-24 bg-green-500 text-white relative overflow-hidden"> -->
+    <!-- Background Decoration -->
+    <!-- <div class="absolute -top-40 -left-40 w-96 h-96 bg-white opacity-10 rounded-full blur-3xl"></div>
+
+        <div class="container mx-auto px-6 lg:px-8 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center"> -->
+    <!-- Left Content -->
+    <!-- <div class="animate-on-scroll">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">Hire Us on Fiverr
+                        for<br>Quick Projects</h2>
+                    <p class="text-lg mb-8 opacity-95">Need expert digital services delivered fast? Connect with us on
+                        Fiverr for immediate access to our talented team.</p> -->
+
+    <!-- Stats Grid -->
+    <!-- <div class="grid grid-cols-2 gap-6 mb-8">
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-star text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-extrabold">4.9/5</h3>
+                                <p class="text-sm opacity-90">Client Rating</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-check-circle text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-extrabold">50+</h3>
+                                <p class="text-sm opacity-90">Orders Done</p>
+                            </div>
+                        </div> -->
+    <!-- <div class="flex items-center space-x-4">
+                            <div
+                                class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-clock text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-extrabold">2 Days</h3>
+                                <p class="text-sm opacity-90">Avg Delivery</p>
+                            </div>
+                        </div>
+                        <div class="flex items-center space-x-4">
+                            <div
+                                class="w-14 h-14 bg-white bg-opacity-20 rounded-xl flex items-center justify-center flex-shrink-0">
+                                <i class="fas fa-redo text-2xl"></i>
+                            </div>
+                            <div>
+                                <h3 class="text-2xl font-extrabold">100%</h3>
+                                <p class="text-sm opacity-90">Satisfaction</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#"
+                        class="bg-white text-green-600 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all inline-block shadow-lg hover:shadow-xl hover:-translate-y-0.5">Visit
+                        Our Fiverr Profile</a>
+                </div> -->
+
+    <!-- Right Content - Card -->
+    <!-- <div class="animate-on-scroll">
+                    <div class="bg-white text-gray-900 rounded-3xl shadow-2xl p-8 animate-float"> -->
+    <!-- Card Header -->
+    <!-- <div class="flex items-center justify-between mb-7">
+                            <div class="flex items-center space-x-3">
+                                <div
+                                    class="w-12 h-12 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                                    JK</div>
+                                <div>
+                                    <h4 class="text-base font-bold text-gray-900">Current Projects</h4>
+                                    <p class="text-sm text-gray-600">3 active orders</p>
+                                </div>
+                            </div>
+                            <button class="text-gray-600 text-xl">
+                                <i class="fas fa-ellipsis-v"></i>
+                            </button>
+                        </div> -->
+
+    <!-- Task List -->
+    <!-- <div class="space-y-4">
+                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                                <div
+                                    class="w-5 h-5 bg-green-500 rounded-md flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">Website redesign for client A</span>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                                <div
+                                    class="w-5 h-5 bg-green-500 rounded-md flex items-center justify-center flex-shrink-0">
+                                    <i class="fas fa-check text-white text-xs"></i>
+                                </div>
+                                <span class="text-sm font-medium text-gray-900">SEO optimization project</span>
+                            </div>
+                            <div class="flex items-center space-x-3 pb-4 border-b border-gray-200">
+                                <div class="w-5 h-5 border-2 border-gray-300 rounded-md flex-shrink-0"></div>
+                                <span class="text-sm font-medium text-gray-900">Mobile app development</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-5 h-5 border-2 border-gray-300 rounded-md flex-shrink-0"></div>
+                                <span class="text-sm font-medium text-gray-900">Social media campaign</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- CTA Section -->
+    <section id="contact" class="py-16 lg:py-24 bg-gray-900 text-white text-center">
+        <div class="container mx-auto px-6 lg:px-8 animate-on-scroll">
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-extrabold mb-6 leading-tight">Let's Build
+                Something<br>Amazing Together</h2>
+            <p class="text-lg text-gray-400 mb-10 max-w-2xl mx-auto">Ready to take your business to the next level? Get
+                in touch today.</p>
+
+            <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a href="contact.html"
+                    class="bg-primary text-white px-8 py-3 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-xl hover:-translate-y-0.5">Start
+                    Your Project</a>
+                <a href="contact.html"
+                    class="bg-white text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-gray-100 transition-all hover:shadow-xl hover:-translate-y-0.5">Schedule
+                    A Call</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Footer Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                            <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                        </div>
+                        <span class="text-l font-bold text-white-900">JK Digital <br> <span
+                                style="color: grey;">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transforming businesses through innovative digital solutions. We deliver quality solutions that
+                        drive growth and success.
+                    </p>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-sm font-bold mb-3">Subscribe to Newsletter</h4>
+                        <form action="https://formspree.io/f/mvzzbekk" method="post">
+                            <div class="flex">
+
+                                <input type="email" placeholder="Email address" name="customer Mail:"
+                                    class="flex-1 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-l-lg px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                                <button type="submit"
+                                    class="bg-primary hover:bg-primary-dark px-4 rounded-r-lg transition-colors">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Services</a></li>
+                        <li><a href="projects.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Website
+                                Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Digital
+                                Marketing & Advertising</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Social Media
+                                Marketing</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Shopify
+                                Marketing & Custoization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-envelope mt-1 text-primary"></i>
+                            <span>jkdigitalssolutions@gmail.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-phone mt-1 text-primary"></i>
+                            <span>+1 (613) 927-2170</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>Location<br>Remote</span>
+                        </li>
+                    </ul>
+
+                    <!-- Social Links -->
+                    <!-- <div class="flex space-x-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-500 text-sm text-center md:text-left">© 2026 JK Digital Solutions. All rights
+                        reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="policies.html" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-white text-sm transition-colors">Terms &
+                            Conditions</a>
+                        <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Designed by</span>
+                            <span class="text-orange-500 font-semibold">JKDIGITALSOULTIONS</span>
+                        </a>
+                        <!-- <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Hire us on</span>
+                            <span class="text-green-500 font-semibold">Fiverr</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trust Badge -->
+    <div id="trustBadge" class="fixed bottom-5 left-5 right-0 bg-white shadow-2xl border-t border-gray-200 z-50"
+        style="animation: slideUp 0.5s ease-out; width: fit-content; border-radius: 10px;">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex items-start space-x-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-shield-alt text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            <strong class="font-semibold">✓ Verified & Trusted</strong><br>
+                            <span class="text-xs">Secure Payments</span>
+                        </p>
+                    </div>
+                </div>
+                <button id="closeTrustBadge" class="text-gray-400 hover:text-gray-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-primary-dark transition-all opacity-0 invisible hover:-translate-y-1 z-50">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- SERVICES MODAL POP -->
+    <!-- Modal -->
+    <div id="serviceModal"
+        class="modal-overlay fixed inset-0 bg-black bg-opacity-60 hidden items-center justify-center z-50 p-4">
+        <div class="modal-content bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
+
+            <!-- Modal Content -->
+            <div class="p-8" id="modalContent">
+                <!-- Content will be injected here -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // SERVICE DATA
+        const serviceData = {
+            website: {
+                title: 'Website Development',
+                icon: `<svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>`,
+                gradient: 'from-blue-500 to-blue-600',
+                description: 'Transform your vision into a stunning, high-performance website that captivates visitors and drives real business results.',
+                highlights: [
+                    '🧑‍💻 Custom website design',
+                    '⚡ Lightning-fast performance',
+                    '📱 Mobile-first responsive design',
+                    '🎨 Custom brand-aligned design',
+                    '🔍 SEO-optimized from day one',
+                    '🛠️ Easy content management',
+                    '📊 Analytics & tracking setup'
+                ],
+                priceRange: '$1,500 - $10,000+',
+                timeline: '2-6 weeks'
+            },
+            seo: {
+                title: 'SEO Optimization',
+                icon: `<svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>`,
+                gradient: 'from-orange-500 to-orange-600',
+                description: 'Dominate search rankings and attract qualified leads with data-driven SEO strategies that deliver measurable growth.',
+                highlights: [
+                    '🎯 Strategic keyword targeting',
+                    '📈 Proven ranking improvements',
+                    '🔧 Technical SEO optimization',
+                    '📝 Content strategy & optimization',
+                    '🔗 Quality backlink building',
+                    '📊 Monthly performance reports'
+                ],
+                priceRange: '$800 - $3,000/mo',
+                timeline: 'Ongoing (3-6 month minimum)'
+            },
+            shopify: {
+                title: 'Shopify Marketing',
+                icon: `<svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>`,
+                gradient: 'from-green-500 to-green-600',
+                description: 'Launch a profitable e-commerce store with complete setup, optimization, and marketing strategies designed to maximize sales.',
+                highlights: [
+                    '🛍️ Complete store setup',
+                    '🎨 Custom theme design',
+                    '📧 Email automation flows',
+                    '🛒 Cart recovery system',
+                    '📱 Social media integration',
+                    '💰 Conversion optimization'
+                ],
+                priceRange: '$2,000 - $8,000+',
+                timeline: '3-8 weeks setup + ongoing'
+            },
+            marketing: {
+                title: 'Digital Marketing',
+                icon: `<svg class="w-12 h-12 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>`,
+                gradient: 'from-pink-500 to-pink-600',
+                description: 'Reach your ideal customers with strategic campaigns across Google, Facebook, Instagram, and more that deliver exceptional ROI.',
+                highlights: [
+                    '🎯 Multi-channel campaigns',
+                    '💡 Data-driven strategy',
+                    '🎨 Professional ad creatives',
+                    '📊 Real-time optimization',
+                    '💰 ROI-focused approach',
+                    '📈 Detailed performance reports'
+                ],
+                priceRange: '$1,200 - $5,000/mo',
+                timeline: 'Ongoing (minimum 3 months)'
+            },
+            email: {
+                title: 'Email Marketing',
+                icon: `<svg class="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>`,
+                gradient: 'from-purple-500 to-purple-600',
+                description: 'Build lasting customer relationships and drive consistent revenue with strategic email campaigns and smart automation.',
+                highlights: [
+                    '✉️ Automated workflows',
+                    '🎨 Beautiful email templates',
+                    '📋 List growth strategies',
+                    '🤖 Smart segmentation',
+                    '📈 A/B testing & optimization',
+                    '💸 Revenue tracking'
+                ],
+                priceRange: '$600 - $2,500/mo',
+                timeline: 'Ongoing (2 week setup)'
+            }
+        };
+
+        // OPEN SERVICE MODAL
+        function openModal(service) {
+            const data = serviceData[service];
+            const modal = document.getElementById('serviceModal');
+            const content = document.getElementById('modalContent');
+
+            content.innerHTML = `
+                    <!-- Close Button -->
+                    <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors">
+                        <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                        </svg>
+                    </button>
+
+                    <!-- Header with Icon -->
+                    <div class="flex items-center mb-6">
+                        <div class="w-16 h-16 bg-gradient-to-br ${data.gradient} rounded-2xl flex items-center justify-center mr-4 shadow-lg text-white" style="color:white;">
+                            ${data.icon}
+                        </div>
+                        <div>
+                            <h2 class="text-3xl font-bold text-gray-900">${data.title}</h2>
+                            <p class="text-gray-500 mt-1">${data.timeline}</p>
+                        </div>
+                    </div>
+
+                    <!-- Description -->
+                    <p class="text-gray-700 text-lg mb-6 leading-relaxed">${data.description}</p>
+
+                    <!-- Highlights Grid -->
+                    <div class="grid md:grid-cols-2 gap-3 mb-8">
+                        ${data.highlights.map(item => `
+                            <div class="flex items-center bg-gray-50 rounded-lg p-3">
+                                <span class="text-lg">${item}</span>
+                            </div>
+                        `).join('')}
+                    </div>
+
+                    <!-- Pricing Card -->
+                    <div class="gradient-border rounded-2xl p-6 mb-6">
+                        <div class="flex items-center justify-between mb-4">
+                            <div>
+                                <p class="text-sm text-gray-600 mb-1">Investment Range</p>
+                                <p class="text-3xl font-bold bg-gradient-to-r ${data.gradient} bg-clip-text text-transparent">${data.priceRange}</p>
+                            </div>
+                            <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                        </div>
+                        <p class="text-sm text-gray-600">Custom pricing based on your specific needs and goals</p>
+                    </div>
+
+                    <!-- CTA Section -->
+                    <div class="bg-gradient-to-r ${data.gradient} rounded-2xl p-8 text-center text-white">
+                        <h3 class="text-2xl font-bold mb-3">Let's Build Something Amazing</h3>
+                        <p class="mb-6 opacity-90">Get a free consultation and custom quote tailored to your business</p>
+                        <a href="contact.html" onclick="closeModal()" class="inline-block bg-white text-gray-900 font-bold px-8 py-4 rounded-xl hover:shadow-xl transition-all transform hover:scale-105">
+                            Get Your Free Quote →
+                        </a>
+                        <p class="text-sm mt-4 opacity-75">✓ Free consultation ✓ No commitment ✓ 24hr response</p>
+                    </div>
+                `;
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // // CLOSSE SERVICE MODAL
+        function closeModal() {
+            const modal = document.getElementById('serviceModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on overlay click
+        document.getElementById('serviceModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                closeModal();
+            }
+        });
+
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Project Data with website links and sales proof
+        const projects = [
+            {
+                id: 1,
+                category: 'shopify',
+                categoryLabel: 'SHOPIFY',
+                categoryBg: 'bg-blue-600',
+                title: 'E-commerce Store Transformation',
+                description: 'Complete Shopify redesign boosting conversions and user satisfaction',
+                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+                client: 'Modern Fashion Boutique',
+                clientWebsite: 'https://modernfashionboutique.com',
+                timeline: '8 weeks',
+                industry: 'Fashion & Retail',
+                salesProof: {
+                    beforeRevenue: '$100/month',
+                    afterRevenue: '$3,000/month',
+                    revenueIncrease: '207%',
+                    roi: '210%',
+                    paybackPeriod: '6 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Poor Mobile Experience',
+                        description: 'Over 70% of traffic was mobile, but conversion rate was only 0.8% due to a cluttered, non-responsive design.'
+                    },
+                    {
+                        title: 'Complex Checkout Process',
+                        description: 'Cart abandonment rate exceeded 82%, with customers dropping off before completing purchases.'
+                    },
+                    {
+                        title: 'Low Search Visibility',
+                        description: 'Site wasn\'t ranking for key product categories, limiting organic traffic growth.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Mobile-First Redesign',
+                        description: 'Implemented a responsive, fast-loading theme optimized for mobile shopping with intuitive navigation.'
+                    },
+                    {
+                        title: 'Streamlined Checkout',
+                        description: 'Reduced checkout steps from 5 to 2, added guest checkout, and integrated express payment options.'
+                    },
+                    {
+                        title: 'SEO Optimization',
+                        description: 'Optimized product pages, meta descriptions, and implemented structured data for better search rankings.'
+                    }
+                ],
+                results: [
+                    { number: '247%', label: 'Increase in Conversions', icon: '📈' },
+                    { number: '64%', label: 'Reduced Cart Abandonment', icon: '🛒' },
+                    { number: '3.8x', label: 'Growth in Organic Traffic', icon: '🔍' },
+                    { number: '4.2s', label: 'Page Load Time', icon: '⚡' }
+                ],
+                tech: ['Shopify Plus', 'Liquid', 'JavaScript', 'Google Analytics', 'Klaviyo'],
+                testimonial: {
+                    text: 'JK Digital Solutions completely transformed our online store. Sales tripled within the first month, and our customers love the new experience. Best investment we\'ve made!',
+                    author: 'Sarah Mitchell',
+                    position: 'Founder at Modern Fashion Boutique',
+                    avatar: '👩‍💼'
+                }
+            },
+            {
+                id: 2,
+                category: 'website',
+                categoryLabel: 'WEBSITE DEVELOPMENT',
+                categoryBg: 'bg-purple-600',
+                title: 'Professional Service Website',
+                description: 'Modern website for a consulting firm with CMS integration',
+                image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+                client: 'Elite Business Consultants',
+                clientWebsite: 'https://elitebusinessconsultants.com',
+                timeline: '6 weeks',
+                industry: 'Business Consulting',
+                salesProof: {
+                    beforeRevenue: '3 leads/month',
+                    afterRevenue: '18 leads/month',
+                    revenueIncrease: '220%',
+                    roi: '250%',
+                    paybackPeriod: '4 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Outdated Web Presence',
+                        description: 'Existing site looked unprofessional and didn\'t reflect the company\'s premium positioning.'
+                    },
+                    {
+                        title: 'No Content Management',
+                        description: 'Client couldn\'t update content without developer intervention, causing delays and increased costs.'
+                    },
+                    {
+                        title: 'Poor Lead Generation',
+                        description: 'Website generated fewer than 3 qualified leads per month despite decent traffic levels.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Premium Design Overhaul',
+                        description: 'Created a sophisticated, modern design that positions the firm as industry leaders.'
+                    },
+                    {
+                        title: 'Custom CMS Integration',
+                        description: 'Implemented WordPress with custom blocks, enabling the client to easily update content independently.'
+                    },
+                    {
+                        title: 'Conversion Optimization',
+                        description: 'Strategic placement of CTAs, lead magnets, and optimized contact forms throughout the site.'
+                    }
+                ],
+                results: [
+                    { number: '220%', label: 'More Qualified Leads', icon: '🎯' },
+                    { number: '89%', label: 'Increase in Time on Site', icon: '⏱️' },
+                    { number: '4.7/5', label: 'Client Satisfaction Score', icon: '⭐' },
+                    { number: '100%', label: 'Content Control', icon: '✅' }
+                ],
+                tech: ['WordPress', 'React', 'PHP', 'MySQL', 'HubSpot CRM'],
+                testimonial: {
+                    text: 'Our new website has become our best salesperson. The leads we\'re getting are higher quality, and we can finally update our content whenever we want. Exceptional work!',
+                    author: 'David Chen',
+                    position: 'Managing Partner at Elite Business Consultants',
+                    avatar: '👨‍💼'
+                }
+            },
+            {
+                id: 3,
+                category: 'seo',
+                categoryLabel: 'SEO',
+                categoryBg: 'bg-green-600',
+                title: 'Local Business SEO Campaign',
+                description: 'Comprehensive SEO strategy for local business growth',
+                image: 'luke-chesser-JKUTrJ4vK00-unsplash.jpg',
+                client: 'GreenThumb Landscaping',
+                clientWebsite: 'https://greenthumblandscaping.com',
+                timeline: '4 months',
+                industry: 'Home Services',
+                salesProof: {
+                    beforeRevenue: '2-3 calls/week',
+                    afterRevenue: '15-20 calls/day',
+                    revenueIncrease: '300%',
+                    roi: '500%',
+                    paybackPeriod: '8 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Zero Online Visibility',
+                        description: 'Business didn\'t appear on the first 5 pages of Google for any relevant search terms.'
+                    },
+                    {
+                        title: 'Competitive Market',
+                        description: 'Local competitors dominated search results with established SEO strategies.'
+                    },
+                    {
+                        title: 'Limited Online Presence',
+                        description: 'No Google Business Profile optimization and minimal local citations.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Technical SEO Foundation',
+                        description: 'Fixed site speed issues, implemented schema markup, and optimized site architecture.'
+                    },
+                    {
+                        title: 'Local SEO Domination',
+                        description: 'Optimized Google Business Profile, built 150+ local citations, and earned positive reviews.'
+                    },
+                    {
+                        title: 'Content Strategy',
+                        description: 'Created location-specific service pages and blog content targeting high-intent keywords.'
+                    }
+                ],
+                results: [
+                    { number: '#1', label: 'Google Maps Ranking', icon: '📍' },
+                    { number: '500%', label: 'Increase in Organic Traffic', icon: '📊' },
+                    { number: '43', label: 'First-Page Keywords', icon: '🔑' },
+                    { number: '156%', label: 'More Service Requests', icon: '📞' }
+                ],
+                tech: ['Google Search Console', 'SEMrush', 'Google Business Profile', 'Schema.org', 'Ahrefs'],
+                testimonial: {
+                    text: 'We went from invisible to the top of Google in our area. Phone calls increased dramatically, and we had to hire two more teams to keep up with demand. Incredible results!',
+                    author: 'Mark Thompson',
+                    position: 'Owner at GreenThumb Landscaping',
+                    avatar: '👨‍🌾'
+                }
+            },
+            {
+                id: 4,
+                category: 'email',
+                categoryLabel: 'EMAIL MARKETING',
+                categoryBg: 'bg-pink-600',
+                title: 'Email Marketing Automation',
+                description: 'Automated email sequences for e-commerce success',
+                image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop',
+                client: 'Wellness & Beauty Co.',
+                clientWebsite: 'https://wellnessbeautyco.com',
+                timeline: '5 weeks',
+                industry: 'Beauty & Wellness',
+                salesProof: {
+                    beforeRevenue: '8% from email',
+                    afterRevenue: '38% from email',
+                    revenueIncrease: '375%',
+                    roi: '580%',
+                    paybackPeriod: '3 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'No Email Strategy',
+                        description: 'Company was sending occasional promotional emails with poor open rates and zero automation.'
+                    },
+                    {
+                        title: 'High Customer Churn',
+                        description: 'One-time buyers rarely returned for repeat purchases despite product quality.'
+                    },
+                    {
+                        title: 'Inefficient Marketing Spend',
+                        description: 'Over-reliance on paid ads meant high acquisition costs without customer retention.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Welcome Series Development',
+                        description: 'Created a 7-email welcome series educating new subscribers and building brand trust.'
+                    },
+                    {
+                        title: 'Segmentation & Personalization',
+                        description: 'Segmented list by purchase behavior, interests, and engagement for targeted campaigns.'
+                    },
+                    {
+                        title: 'Lifecycle Automation',
+                        description: 'Implemented cart abandonment, post-purchase, win-back, and VIP customer flows.'
+                    }
+                ],
+                results: [
+                    { number: '38%', label: 'Email Revenue Contribution', icon: '💰' },
+                    { number: '52%', label: 'Open Rate Average', icon: '📧' },
+                    { number: '6.8%', label: 'Click-Through Rate', icon: '🖱️' },
+                    { number: '2.3x', label: 'Customer Lifetime Value', icon: '💎' }
+                ],
+                tech: ['Klaviyo', 'Shopify', 'Canva', 'Google Analytics', 'Mailchimp'],
+                testimonial: {
+                    text: 'Email marketing went from an afterthought to our most profitable channel. The automation runs 24/7, bringing in consistent revenue while we sleep. Game-changer!',
+                    author: 'Jessica Williams',
+                    position: 'Marketing Director at Wellness & Beauty Co.',
+                    avatar: '👩‍💻'
+                }
+            },
+            {
+                id: 5,
+                category: 'shopify',
+                categoryLabel: 'SHOPIFY',
+                categoryBg: 'bg-blue-600',
+                title: 'Shopify Store Launch',
+                description: 'New Shopify store launch for fashion boutique',
+                image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop',
+                client: 'Chic Boutique Fashion',
+                clientWebsite: 'https://chicboutiquefashion.com',
+                timeline: '10 weeks',
+                industry: 'Fashion E-commerce',
+                salesProof: {
+                    beforeRevenue: '$0 (new store)',
+                    afterRevenue: '$5,000/month',
+                    revenueIncrease: 'New Launch',
+                    roi: '520%',
+                    paybackPeriod: '5 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'First-Time E-commerce',
+                        description: 'Client had a physical store but no online presence or e-commerce experience.'
+                    },
+                    {
+                        title: 'Inventory Management',
+                        description: 'Needed seamless integration between in-store POS and online inventory.'
+                    },
+                    {
+                        title: 'Brand Translation',
+                        description: 'Capturing the boutique\'s unique in-store experience in a digital format.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Custom Shopify Build',
+                        description: 'Designed and developed a custom Shopify theme reflecting the boutique\'s aesthetic.'
+                    },
+                    {
+                        title: 'Unified Commerce System',
+                        description: 'Integrated Shopify POS for real-time inventory sync across online and physical store.'
+                    },
+                    {
+                        title: 'Brand Storytelling',
+                        description: 'Created engaging product photography, descriptions, and brand story content.'
+                    }
+                ],
+                results: [
+                    { number: '$5.6K', label: 'First Month Revenue', icon: '💵' },
+                    { number: '3,200+', label: 'Email Subscribers', icon: '👥' },
+                    { number: '4.9/5', label: 'Customer Reviews', icon: '⭐' },
+                    { number: '68%', label: 'Repeat Purchase Rate', icon: '🔄' }
+                ],
+                tech: ['Shopify', 'Shopify POS', 'Oberlo', 'Instagram Shopping', 'Facebook Pixel'],
+                testimonial: {
+                    text: 'Going online seemed overwhelming, but JK Digital made it seamless. We\'re now reaching customers nationwide and our revenue has doubled. Couldn\'t be happier!',
+                    author: 'Amanda Rodriguez',
+                    position: 'Owner at Chic Boutique Fashion',
+                    avatar: '👩‍🎨'
+                }
+            },
+            {
+                id: 6,
+                category: 'digital',
+                categoryLabel: 'DIGITAL MARKETING',
+                categoryBg: 'bg-orange-600',
+                title: 'Digital Marketing Campaign',
+                description: 'Multi-channel marketing campaign for startup',
+                image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop',
+                client: 'TechStart Innovation',
+                clientWebsite: 'https://techstartinnovation.com',
+                timeline: '3 months',
+                industry: 'B2B SaaS',
+                salesProof: {
+                    beforeRevenue: '120 leads/month',
+                    afterRevenue: '1,200 leads/month',
+                    revenueIncrease: '133%',
+                    roi: '210%',
+                    paybackPeriod: '6 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Limited Brand Awareness',
+                        description: 'New product launch with zero market recognition in a competitive tech space.'
+                    },
+                    {
+                        title: 'Tight Marketing Budget',
+                        description: 'Startup budget required strategic, cost-effective marketing channel selection.'
+                    },
+                    {
+                        title: 'Complex Product Education',
+                        description: 'Technical B2B SaaS product requiring educational content for target audience.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Content Marketing Strategy',
+                        description: 'Created thought leadership content, case studies, and educational resources.'
+                    },
+                    {
+                        title: 'LinkedIn B2B Campaigns',
+                        description: 'Targeted LinkedIn ads to decision-makers with compelling value propositions.'
+                    },
+                    {
+                        title: 'Performance Analytics',
+                        description: 'Implemented tracking and optimization based on real-time campaign performance data.'
+                    }
+                ],
+                results: [
+                    { number: '1,200+', label: 'Qualified Leads', icon: '🎯' },
+                    { number: '210%', label: 'ROI on Ad Spend', icon: '📈' },
+                    { number: '4.2M', label: 'Total Impressions', icon: '👁️' },
+                    { number: '340%', label: 'Website Traffic Growth', icon: '🚀' }
+                ],
+                tech: ['LinkedIn Ads', 'Google Ads', 'HubSpot', 'Google Analytics', 'Hotjar'],
+                testimonial: {
+                    text: 'Their strategic approach turned our limited budget into a lead-generation machine. We exceeded our first-year goals in just three months. Exceptional partnership!',
+                    author: 'Michael Tan',
+                    position: 'Co-founder at TechStart Innovation',
+                    avatar: '👨‍💼'
+                }
+            },
+            {
+                id: 7,
+                category: 'website',
+                categoryLabel: 'WEBSITE DEVELOPMENT',
+                categoryBg: 'bg-purple-600',
+                title: 'Restaurant Website & SEO',
+                description: 'Full website and local SEO for restaurant chain',
+                image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop',
+                client: 'Bella Italia Restaurants',
+                clientWebsite: 'https://bellaitaliarestaurants.com',
+                timeline: '7 weeks',
+                industry: 'Food & Beverage',
+                salesProof: {
+                    beforeRevenue: '2-3 reservations/day',
+                    afterRevenue: '25-30 reservations/day',
+                    revenueIncrease: '520%',
+                    roi: '640%',
+                    paybackPeriod: '4 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Multi-Location Management',
+                        description: 'Three locations requiring individual pages with unified branding and easy management.'
+                    },
+                    {
+                        title: 'Online Ordering Integration',
+                        description: 'Needed seamless third-party delivery integration while maintaining brand experience.'
+                    },
+                    {
+                        title: 'Local Competition',
+                        description: 'Competing with established restaurants dominating local search results.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Responsive Website Design',
+                        description: 'Mobile-first design with appetizing photography and easy navigation to menus and ordering.'
+                    },
+                    {
+                        title: 'Online Ordering System',
+                        description: 'Integrated online ordering with delivery partners while maintaining direct ordering option.'
+                    },
+                    {
+                        title: 'Multi-Location SEO',
+                        description: 'Optimized individual location pages with local keywords and Google Business Profiles.'
+                    }
+                ],
+                results: [
+                    { number: '420%', label: 'Online Orders Increase', icon: '🍕' },
+                    { number: 'Top 3', label: 'Local Map Rankings', icon: '📍' },
+                    { number: '7,300+', label: 'Monthly Website Visits', icon: '👥' },
+                    { number: '195%', label: 'Phone Call Increase', icon: '📞' }
+                ],
+                tech: ['WordPress', 'UberEats API', 'Google Maps', 'OpenTable', 'Yelp Integration'],
+                testimonial: {
+                    text: 'Our online presence went from nearly invisible to driving daily reservations and takeout orders. The website perfectly captures our brand, and we\'re consistently booked!',
+                    author: 'Giovanni Rossi',
+                    position: 'Owner at Bella Italia Restaurants',
+                    avatar: '👨‍🍳'
+                }
+            },
+            {
+                id: 8,
+                category: 'email',
+                categoryLabel: 'EMAIL MARKETING',
+                categoryBg: 'bg-pink-600',
+                title: 'E-commerce Email Strategy',
+                description: 'Email marketing strategy driving repeat purchases',
+                image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop',
+                client: 'Outdoor Gear Collective',
+                clientWebsite: 'https://outdoorgearcollective.com',
+                timeline: '6 weeks',
+                industry: 'Outdoor Retail',
+                salesProof: {
+                    beforeRevenue: '$4..7K/month',
+                    afterRevenue: '$127K/month',
+                    revenueIncrease: '170%',
+                    roi: '485%',
+                    paybackPeriod: '4 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Low Repeat Purchase Rate',
+                        description: 'Strong new customer acquisition but customers weren\'t returning for second purchases.'
+                    },
+                    {
+                        title: 'Generic Email Blasts',
+                        description: 'Existing emails were one-size-fits-all promotions with poor engagement.'
+                    },
+                    {
+                        title: 'Underutilized Customer Data',
+                        description: 'Rich purchase data wasn\'t being leveraged for personalized marketing.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Behavioral Segmentation',
+                        description: 'Segmented customers by activity type, purchase history, and engagement level.'
+                    },
+                    {
+                        title: 'Product Recommendation Engine',
+                        description: 'Created personalized product recommendations based on browsing and purchase behavior.'
+                    },
+                    {
+                        title: 'Engagement Campaigns',
+                        description: 'Developed educational content series teaching customers about gear usage and maintenance.'
+                    }
+                ],
+                results: [
+                    { number: '186%', label: 'Repeat Purchase Rate', icon: '🔄' },
+                    { number: '43%', label: 'Email Open Rate', icon: '📧' },
+                    { number: '8.2%', label: 'Conversion Rate', icon: '💰' },
+                    { number: '$12.7K', label: 'Monthly Email Revenue', icon: '💵' }
+                ],
+                tech: ['Klaviyo', 'Shopify', 'Dynamic Content', 'Litmus', 'Google Analytics'],
+                testimonial: {
+                    text: 'Email became our secret weapon. Customers are engaged, buying more frequently, and our average order value has increased. This strategy pays for itself many times over.',
+                    author: 'Rachel Green',
+                    position: 'E-commerce Manager at Outdoor Gear Collective',
+                    avatar: '👩‍💼'
+                }
+            }
+        ];
+
+        // Initialize projects on page load
+        function initProjects() {
+            renderProjects(projects);
+            setupFilterButtons();
+        }
+
+        // Render projects to the grid - EXACT IMAGE STYLE
+        function renderProjects(projectsToRender) {
+            const grid = document.getElementById('projectsGrid');
+            grid.innerHTML = '';
+
+            projectsToRender.forEach((project) => {
+                const card = document.createElement('div');
+                card.className = 'relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group h-64';
+                card.onclick = () => openModal(project.id);
+
+                card.innerHTML = `
+                    <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="${project.categoryBg} text-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide">
+                            ${project.categoryLabel}
+                        </span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2 leading-tight group-hover:text-blue-400 transition-colors">
+                            ${project.title}
+                        </h3>
+                        <p class="text-sm text-gray-200 leading-relaxed">
+                            ${project.description}
+                        </p>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Setup filter button functionality
+        function setupFilterButtons() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active state from all buttons
+                    filterButtons.forEach(b => {
+                        b.classList.remove('bg-blue-600', 'text-white');
+                        b.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+
+                    // Add active state to clicked button
+                    this.classList.remove('bg-gray-100', 'text-gray-700');
+                    this.classList.add('bg-blue-600', 'text-white');
+
+                    // Filter projects
+                    const filter = this.dataset.filter;
+                    const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+                    renderProjects(filtered);
+                });
+            });
+        }
+
+        // Open modal with project details
+        function openModal(projectId) {
+            const project = projects.find(p => p.id === projectId);
+            const modal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('modalContent');
+
+            modalContent.innerHTML = `
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-6 right-6 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white transform hover:rotate-90 transition-all z-20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                
+                <!-- Hero Image -->
+                <div class="relative">
+                    <img src="${project.image}" alt="${project.title}" class="w-full h-96 object-cover rounded-t-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-t-2xl"></div>
+                    <div class="absolute bottom-8 left-8 right-8 text-white">
+                        <span class="${project.categoryBg} text-white px-4 py-1.5 rounded-md text-sm font-bold uppercase tracking-wide inline-block mb-4">
+                            ${project.categoryLabel}
+                        </span>
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                            ${project.title}
+                        </h2>
+                        <p class="text-xl text-gray-100">
+                            ${project.description}
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Modal Body -->
+                <div class="p-8 lg:p-12">
+                    
+                    <!-- Project Overview & Client Link -->
+                    <div class="mb-12 grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 rounded-xl p-8 border-l-4 border-blue-600">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                                <span class="text-3xl mr-3">📋</span>
+                                Project Overview
+                            </h3>
+                            <div class="space-y-3 text-gray-700">
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Client:</strong> ${project.client}</p>
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Industry:</strong> ${project.industry}</p>
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Timeline:</strong> ${project.timeline}</p>
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Services:</strong> ${project.categoryLabel}</p>
+                                <a href="${project.clientWebsite}" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mt-4 group">
+                                    <span>Visit Live Website</span>
+                                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Sales Proof -->
+                        <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-6 flex items-center">
+                                <span class="text-3xl mr-3">💰</span>
+                                Sales Proof & ROI
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-sm text-blue-100 mb-1">Before Investment</p>
+                                    <p class="text-2xl font-bold">${project.salesProof.beforeRevenue}</p>
+                                </div>
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-sm text-blue-100 mb-1">After Implementation</p>
+                                    <p class="text-2xl font-bold">${project.salesProof.afterRevenue}</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-xs text-blue-100 mb-1">Revenue Increase</p>
+                                        <p class="text-xl font-bold">${project.salesProof.revenueIncrease}</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-xs text-blue-100 mb-1">ROI</p>
+                                        <p class="text-xl font-bold">${project.salesProof.roi}</p>
+                                    </div>
+                                </div>
+                                <div class="bg-green-500/20 backdrop-blur-sm rounded-lg p-3 border border-green-400/30">
+                                    <p class="text-sm">⚡ <strong>Payback Period:</strong> ${project.salesProof.paybackPeriod}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Challenge -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">🎯</span>
+                            The Challenge
+                        </h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            ${project.challenge.map(item => `
+                                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-red-500 hover:shadow-lg hover:translate-x-2 transition-all">
+                                    <h4 class="text-lg font-bold text-gray-900 mb-3">${item.title}</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed">${item.description}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Our Solution -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">💡</span>
+                            Our Solution
+                        </h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            ${project.solution.map(item => `
+                                <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600 hover:shadow-lg hover:translate-x-2 transition-all">
+                                    <h4 class="text-lg font-bold text-gray-900 mb-3">${item.title}</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed">${item.description}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Results & Impact -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">📈</span>
+                            Results & Impact
+                        </h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            ${project.results.map(stat => `
+                                <div class="bg-gradient-to-br from-blue-600 to-purple-600 p-8 rounded-xl text-center text-white shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all">
+                                    <div class="text-4xl mb-3">${stat.icon}</div>
+                                    <div class="text-4xl font-extrabold mb-2">${stat.number}</div>
+                                    <div class="text-sm font-medium opacity-95">${stat.label}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Technology Stack -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">🛠️</span>
+                            Technology Stack
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            ${project.tech.map(tech => `
+                                <span class="bg-white border-2 border-gray-200 hover:border-blue-600 px-5 py-2.5 rounded-lg font-semibold text-gray-700 hover:bg-blue-50 transition-all">
+                                    ${tech}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Client Testimonial -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">💬</span>
+                            Client Testimonial
+                        </h3>
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-10 rounded-xl border-l-4 border-blue-600">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-5xl">${project.testimonial.avatar}</div>
+                                <div class="flex-1">
+                                    <p class="text-xl text-gray-800 italic leading-relaxed mb-5">
+                                        "${project.testimonial.text}"
+                                    </p>
+                                    <div>
+                                        <p class="text-base font-bold text-blue-600">${project.testimonial.author}</p>
+                                        <p class="text-sm text-gray-600">${project.testimonial.position}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Section -->
+                    <div class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-12 text-center text-white">
+                        <h3 class="text-3xl font-bold mb-4">Ready to Achieve Similar Results?</h3>
+                        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                            Let's discuss how we can transform your business with a custom strategy tailored to your goals.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="./contact.html" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all">
+                                Start Your Project
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                            <a href="./contact.html" class="inline-flex items-center justify-center bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all">
+                                Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('projectModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('projectModal');
+                if (modal.classList.contains('flex')) {
+                    closeModal();
+                }
+            }
+        });
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', initProjects);
+
+        // Trust Badge
+        const trustBadge = document.getElementById('trustBadge');
+        const closeTrustBadge = document.getElementById('closeTrustBadge');
+
+        // Check if user has already closed the badge
+        if (sessionStorage.getItem('trustBadgeClosed')) {
+            trustBadge.style.display = 'none';
+        }
+
+        closeTrustBadge.addEventListener('click', () => {
+            trustBadge.style.animation = 'slideDown 0.5s ease-out';
+            setTimeout(() => {
+                trustBadge.style.display = 'none';
+            }, 500);
+            sessionStorage.setItem('trustBadgeClosed', 'true');
+        });
+
+    </script>
+</body>
+
+</html>

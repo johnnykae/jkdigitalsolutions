@@ -1,0 +1,1092 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Digital - We Build Digital Success Stories</title>
+    <meta name="description"
+        content="Looking for affordable, agency-quality web design and digital marketing? JK Digital Solutions helps startups and small businesses grow online with proven results.">
+    <meta name="title" content="JK Digital Solutions | Affordable Web & Digital Marketing Services">
+    <!-- Indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jkdigitalsolutions.com/">
+
+    <link rel="shortcut icon" href="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" type="image/x-icon">
+
+
+    <!-- Structured data (Schema) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JK Digital Solutions",
+    "url": "https://www.jkdigitalsolutions.com",
+    "logo": "https://www.jkdigitalsolutions.com/logo.png",
+    "description": "Affordable web design and digital marketing agency helping startups and small businesses grow online.",
+    "foundingDate": "2020",
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <!-- Tailwind Config -->
+    <!-- <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            500: '#5B71F5',
+                            600: '#4A5FE4',
+                        }
+                    },
+                    fontFamily: {
+                        'sans': ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script> -->
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4169E1',
+                            dark: '#3557CC',
+                        },
+                        dark: {
+                            DEFAULT: '#1F2937',
+                            900: '#111827',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'float-slow': 'float 8s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-20px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+</head>
+
+<body class="font-sans bg-gray-50 text-gray-900">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                        <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                    </div>
+                    <span class="text-l font-bold text-gray-900">JK Digital <br> <span
+                            style="color: grey;">Solutions</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="text-primary border-b-2 border-primary font-semibold text-dark-900 hover:text-primary font-medium transition-colors">Home</a>
+                    </li>
+                    <li><a href="about.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">About</a></li>
+                    <li><a href="services.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a></li>
+                    <li><a href="projects.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a></li>
+                    <li><a href="testimonial.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a></li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a></li>
+                    <li><a href="contact.html"
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-0.5">Get
+                            Started</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-900 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="lg:hidden hidden mt-4 pb-4">
+                <ul class="space-y-4">
+                    <li><a href="index.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html" class="block text-primary font-semibold">About</a></li>
+                    <li><a href="services.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+                    </li>
+                    <li><a href="testimonial.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block bg-primary text-white px-6 py-2.5 rounded-lg font-semibold text-center hover:bg-primary-dark transition-all">Get
+                            Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-16">
+        <div class="max-w-5xl mx-auto px-6 text-center">
+            <div
+                class="inline-flex items-center bg-white/20 backdrop-blur-sm px-4 py-2 rounded-full text-sm font-semibold mb-6">
+                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z">
+                    </path>
+                </svg>
+                Legal Information
+            </div>
+            <h1 class="text-5xl font-bold mb-4">Privacy Policy</h1>
+            <p class="text-xl text-blue-100 mb-2">Last Updated: January 21, 2026</p>
+            <p class="text-lg text-blue-100 max-w-3xl mx-auto">
+                Your privacy matters to us. Learn how we collect, use, and protect your personal information.
+            </p>
+        </div>
+    </section>
+
+    <!-- Quick Navigation -->
+    <section class="bg-white border-b sticky top-16 z-40 shadow-sm">
+        <div class="max-w-5xl mx-auto px-6 py-4 overflow-x-auto">
+            <nav class="flex space-x-6 text-sm whitespace-nowrap">
+                <a href="#introduction"
+                    class="text-gray-700 hover:text-blue-600 font-medium transition">Introduction</a>
+                <a href="#information" class="text-gray-700 hover:text-blue-600 font-medium transition">Information We
+                    Collect</a>
+                <a href="#usage" class="text-gray-700 hover:text-blue-600 font-medium transition">How We Use Data</a>
+                <a href="#sharing" class="text-gray-700 hover:text-blue-600 font-medium transition">Data Sharing</a>
+                <a href="#cookies" class="text-gray-700 hover:text-blue-600 font-medium transition">Cookies</a>
+                <a href="#security" class="text-gray-700 hover:text-blue-600 font-medium transition">Security</a>
+                <a href="#rights" class="text-gray-700 hover:text-blue-600 font-medium transition">Your Rights</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 font-medium transition">Contact Us</a>
+            </nav>
+        </div>
+    </section>
+
+    <!-- Main Content -->
+    <main class="max-w-5xl mx-auto px-6 py-16">
+
+        <!-- Introduction -->
+        <section id="introduction" class="mb-16 scroll-mt-32">
+            <div class="bg-blue-50 border-l-4 border-blue-600 p-8 rounded-r-lg mb-8">
+                <div class="flex items-start">
+                    <div class="text-3xl mr-4">👋</div>
+                    <div>
+                        <h2 class="text-2xl font-bold text-gray-900 mb-3">Welcome to Our Privacy Policy</h2>
+                        <p class="text-gray-700 leading-relaxed">
+                            At JK Digital Solutions ("we," "us," or "our"), we respect your privacy and are committed to
+                            protecting your personal data. This Privacy Policy explains how we collect, use, disclose,
+                            and safeguard your information when you visit our website, use our services, or engage with
+                            us in any capacity.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="prose prose-lg max-w-none">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    By accessing or using our services, you acknowledge that you have read, understood, and agree to be
+                    bound by this Privacy Policy. If you do not agree with the terms of this policy, please discontinue
+                    use of our services immediately.
+                </p>
+                <p class="text-gray-700 leading-relaxed">
+                    This policy applies to all information collected through our website, services, email
+                    communications, and any related applications or platforms operated by JK Digital Solutions.
+                </p>
+            </div>
+        </section>
+
+        <!-- Information We Collect -->
+        <section id="information" class="mb-16 scroll-mt-32">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <span
+                    class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">📋</span>
+                Information We Collect
+            </h2>
+
+            <div class="space-y-8">
+                <!-- Personal Information -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">1. Personal Information You Provide</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        We collect information that you voluntarily provide to us when you:
+                    </p>
+                    <ul class="space-y-3 text-gray-700">
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-0.5" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span><strong>Contact us:</strong> Name, email address, phone number, company name, and
+                                message content</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-0.5" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span><strong>Request a quote:</strong> Business details, project requirements, budget
+                                information, and timeline</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-0.5" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span><strong>Subscribe to our newsletter:</strong> Email address, name, and communication
+                                preferences</span>
+                        </li>
+                        <li class="flex items-start">
+                            <svg class="w-6 h-6 text-blue-600 mr-3 flex-shrink-0 mt-0.5" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                            </svg>
+                            <span><strong>Engage our services:</strong> Payment information, billing address, and
+                                project-related documents</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Automatically Collected -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">2. Information Automatically Collected</h3>
+                    <p class="text-gray-700 leading-relaxed mb-4">
+                        When you visit our website, we automatically collect certain information about your device,
+                        including:
+                    </p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2">Technical Data</h4>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• IP address</li>
+                                <li>• Browser type and version</li>
+                                <li>• Operating system</li>
+                                <li>• Device information</li>
+                                <li>• Screen resolution</li>
+                            </ul>
+                        </div>
+                        <div class="bg-gray-50 p-4 rounded-lg">
+                            <h4 class="font-semibold text-gray-900 mb-2">Usage Data</h4>
+                            <ul class="text-sm text-gray-700 space-y-1">
+                                <li>• Pages visited</li>
+                                <li>• Time spent on pages</li>
+                                <li>• Click patterns</li>
+                                <li>• Referral sources</li>
+                                <li>• Date and time of access</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Third-Party Sources -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4">3. Information from Third-Party Sources</h3>
+                    <p class="text-gray-700 leading-relaxed">
+                        We may receive information about you from third-party sources, including social media platforms,
+                        analytics providers, advertising networks, and marketing partners. This information may include
+                        demographic data, browsing behavior, and interests to help us better understand and serve our
+                        audience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- How We Use Your Information -->
+        <section id="usage" class="mb-16 scroll-mt-32">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <span
+                    class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">🎯</span>
+                How We Use Your Information
+            </h2>
+
+            <div class="bg-gradient-to-br from-blue-50 to-purple-50 rounded-xl p-8 mb-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We use the information we collect for legitimate business purposes, including:
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-2 gap-6">
+                <div class="bg-white border-l-4 border-blue-600 p-6 rounded-r-lg shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">🔧</span>
+                        Service Delivery
+                    </h3>
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>• Provide and maintain our services</li>
+                        <li>• Process transactions and payments</li>
+                        <li>• Deliver project deliverables</li>
+                        <li>• Respond to inquiries and support requests</li>
+                        <li>• Manage client relationships</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white border-l-4 border-purple-600 p-6 rounded-r-lg shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">📈</span>
+                        Business Operations
+                    </h3>
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>• Analyze website usage and trends</li>
+                        <li>• Improve our services and user experience</li>
+                        <li>• Develop new features and offerings</li>
+                        <li>• Conduct research and analytics</li>
+                        <li>• Monitor and prevent fraud</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white border-l-4 border-green-600 p-6 rounded-r-lg shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">📧</span>
+                        Communication
+                    </h3>
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>• Send service updates and notifications</li>
+                        <li>• Provide marketing communications (with consent)</li>
+                        <li>• Send newsletters and promotional content</li>
+                        <li>• Request feedback and reviews</li>
+                        <li>• Inform about new services or offers</li>
+                    </ul>
+                </div>
+
+                <div class="bg-white border-l-4 border-orange-600 p-6 rounded-r-lg shadow-sm">
+                    <h3 class="font-bold text-gray-900 mb-3 flex items-center">
+                        <span class="text-2xl mr-2">⚖️</span>
+                        Legal Compliance
+                    </h3>
+                    <ul class="text-gray-700 space-y-2 text-sm">
+                        <li>• Comply with legal obligations</li>
+                        <li>• Enforce our terms and conditions</li>
+                        <li>• Protect our rights and property</li>
+                        <li>• Resolve disputes and legal claims</li>
+                        <li>• Respond to lawful requests</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Sharing and Disclosure -->
+        <section id="sharing" class="mb-16 scroll-mt-32">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <span
+                    class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">🤝</span>
+                Data Sharing and Disclosure
+            </h2>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm mb-6">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We do not sell your personal information to third parties. However, we may share your information in
+                    the following circumstances:
+                </p>
+
+                <div class="space-y-6">
+                    <div class="border-l-4 border-blue-600 pl-6">
+                        <h3 class="font-bold text-gray-900 mb-2">Service Providers</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            We work with trusted third-party service providers who assist us in operating our website,
+                            conducting business, and serving our clients. These providers include hosting services,
+                            payment processors, email marketing platforms, analytics tools, and CRM systems. They are
+                            contractually obligated to protect your data and use it only for specified purposes.
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-purple-600 pl-6">
+                        <h3 class="font-bold text-gray-900 mb-2">Business Transfers</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            If we are involved in a merger, acquisition, sale of assets, or bankruptcy, your information
+                            may be transferred as part of that transaction. We will notify you via email or prominent
+                            notice on our website of any change in ownership or use of your personal information.
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-green-600 pl-6">
+                        <h3 class="font-bold text-gray-900 mb-2">Legal Requirements</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            We may disclose your information if required by law, court order, or governmental
+                            regulation, or if we believe disclosure is necessary to protect our rights, your safety, or
+                            the safety of others, investigate fraud, or respond to government requests.
+                        </p>
+                    </div>
+
+                    <div class="border-l-4 border-orange-600 pl-6">
+                        <h3 class="font-bold text-gray-900 mb-2">With Your Consent</h3>
+                        <p class="text-gray-700 text-sm leading-relaxed">
+                            We may share your information with third parties when you have given us explicit permission
+                            to do so, such as when you authorize us to share testimonials or case studies featuring your
+                            business.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Cookies and Tracking -->
+        <section id="cookies" class="mb-16 scroll-mt-32">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <span
+                    class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">🍪</span>
+                Cookies and Tracking Technologies
+            </h2>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    We use cookies and similar tracking technologies to enhance your browsing experience, analyze site
+                    traffic, and personalize content. Cookies are small data files stored on your device that help us
+                    remember your preferences and understand how you use our website.
+                </p>
+
+                <h3 class="font-bold text-gray-900 mb-4">Types of Cookies We Use:</h3>
+
+                <div class="space-y-4">
+                    <div class="bg-gray-50 p-5 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-xs font-bold mr-4">
+                                ESSENTIAL</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900 mb-1">Strictly Necessary Cookies</h4>
+                                <p class="text-sm text-gray-700">Required for the website to function properly. These
+                                    cookies enable core functionality like security, network management, and
+                                    accessibility.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-purple-100 text-purple-600 px-3 py-1 rounded-full text-xs font-bold mr-4">
+                                ANALYTICS</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900 mb-1">Performance Cookies</h4>
+                                <p class="text-sm text-gray-700">Help us understand how visitors interact with our
+                                    website by collecting and reporting information anonymously. We use Google Analytics
+                                    and similar tools for this purpose.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-green-100 text-green-600 px-3 py-1 rounded-full text-xs font-bold mr-4">
+                                FUNCTIONAL</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900 mb-1">Functionality Cookies</h4>
+                                <p class="text-sm text-gray-700">Allow us to remember choices you make (such as your
+                                    language preference) and provide enhanced, personalized features.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-gray-50 p-5 rounded-lg">
+                        <div class="flex items-start">
+                            <div class="bg-orange-100 text-orange-600 px-3 py-1 rounded-full text-xs font-bold mr-4">
+                                MARKETING</div>
+                            <div class="flex-1">
+                                <h4 class="font-semibold text-gray-900 mb-1">Targeting/Advertising Cookies</h4>
+                                <p class="text-sm text-gray-700">Used to deliver advertisements relevant to you and your
+                                    interests. They also limit the number of times you see an ad and help measure
+                                    campaign effectiveness.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="bg-blue-50 border-l-4 border-blue-600 p-6 rounded-r-lg mt-6">
+                    <h4 class="font-bold text-gray-900 mb-2">Managing Cookies</h4>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        You can control and manage cookies through your browser settings. Most browsers allow you to
+                        refuse or accept cookies, delete existing cookies, or set preferences for certain websites. Note
+                        that disabling cookies may affect the functionality of our website and limit your user
+                        experience.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Data Security -->
+        <section id="security" class="mb-16 scroll-mt-32">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <span
+                    class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">🔒</span>
+                Data Security
+            </h2>
+
+            <div class="bg-gradient-to-br from-green-50 to-blue-50 rounded-xl p-8 mb-6">
+                <p class="text-gray-700 leading-relaxed mb-4">
+                    We take the security of your personal information seriously and implement appropriate technical and
+                    organizational measures to protect it against unauthorized access, alteration, disclosure, or
+                    destruction.
+                </p>
+            </div>
+
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                    <div class="text-4xl mb-4">🛡️</div>
+                    <h3 class="font-bold text-gray-900 mb-3">Encryption</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        We use SSL/TLS encryption to protect data transmitted between your browser and our servers,
+                        ensuring secure communication.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                    <div class="text-4xl mb-4">🔐</div>
+                    <h3 class="font-bold text-gray-900 mb-3">Access Controls</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        Access to personal data is restricted to authorized personnel who need it to perform their job
+                        functions.
+                    </p>
+                </div>
+
+                <div class="bg-white border border-gray-200 rounded-xl p-6 shadow-sm">
+                    <div class="text-4xl mb-4">🔍</div>
+                    <h3 class="font-bold text-gray-900 mb-3">Regular Audits</h3>
+                    <p class="text-sm text-gray-700 leading-relaxed">
+                        We conduct regular security audits and vulnerability assessments to identify and address
+                        potential risks.
+                    </p>
+                </div>
+            </div>
+
+            <div class="bg-yellow-50 border-l-4 border-yellow-500 p-6 rounded-r-lg mt-6">
+                <div class="flex items-start">
+                    <svg class="w-6 h-6 text-yellow-600 mr-3 flex-shrink-0" fill="none" stroke="currentColor"
+                        viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M12 9v2m0 4h.01m-6.938 4h13.856c1.54 0 2.502-1.667 1.732-3L13.732 4c-.77-1.333-2.694-1.333-3.464 0L3.34 16c-.77 1.333.192 3 1.732 3z">
+                        </path>
+                    </svg>
+                    <div>
+                        <h4 class="font-bold text-gray-900 mb-2">Important Notice</h4>
+                        <p class="text-sm text-gray-700 leading-relaxed">
+                            While we strive to protect your personal information, no method of transmission over the
+                            Internet or electronic storage is 100% secure. We cannot guarantee absolute security, but we
+                            are committed to protecting your data using industry-standard practices.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Your Rights -->
+        <section id="rights" class="mb-16 scroll-mt-32">
+            <h2 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                <span
+                    class="w-10 h-10 bg-gradient-to-br from-blue-600 to-purple-600 rounded-lg flex items-center justify-center text-white text-xl mr-3">✋</span>
+                Your Privacy Rights
+            </h2>
+
+            <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm mb-6">
+                <p class="text-gray-700 leading-relaxed mb-6">
+                    Depending on your location and applicable laws (including GDPR, CCPA, and other privacy
+                    regulations), you may have the following rights regarding your personal information:
+                </p>
+
+                <div class="space-y-4">
+                    <div class="flex items-start bg-gray-50 p-5 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Right to Access</h3>
+                            <p class="text-sm text-gray-700">Request access to the personal information we hold about
+                                you, including details about how we use and share it.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start bg-gray-50 p-5 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M11 5H6a2 2 0 00-2 2v11a2 2 0 002 2h11a2 2 0 002-2v-5m-1.414-9.414a2 2 0 112.828 2.828L11.828 15H9v-2.828l8.586-8.586z">
+                            </path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Right to Rectification</h3>
+                            <p class="text-sm text-gray-700">Request correction of inaccurate or incomplete personal
+                                information we have about you.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start bg-gray-50 p-5 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M19 7l-.867 12.142A2 2 0 0116.138 21H7.862a2 2 0 01-1.995-1.858L5 7m5 4v6m4-6v6m1-10V4a1 1 0 00-1-1h-4a1 1 0 00-1 1v3M4 7h16">
+                            </path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Right to Erasure</h3>
+                            <p class="text-sm text-gray-700">Request deletion of your personal information, subject to
+                                certain legal exceptions and retention requirements.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start bg-gray-50 p-5 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M18.364 18.364A9 9 0 005.636 5.636m12.728 12.728A9 9 0 015.636 5.636m12.728 12.728L5.636 5.636">
+                            </path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Right to Object</h3>
+                            <p class="text-sm text-gray-700">Object to processing of your personal information for
+                                direct marketing or other legitimate interests.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start bg-gray-50 p-5 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"></path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Right to Data Portability</h3>
+                            <p class="text-sm text-gray-700">Request transfer of your data to another service provider
+                                in a structured, commonly used format.</p>
+                        </div>
+                    </div>
+
+                    <div class="flex items-start bg-gray-50 p-5 rounded-lg">
+                        <svg class="w-6 h-6 text-blue-600 mr-4 flex-shrink-0 mt-1" fill="none" stroke="currentColor"
+                            viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9">
+                            </path>
+                        </svg>
+                        <div>
+                            <h3 class="font-bold text-gray-900 mb-1">Right to Withdraw Consent</h3>
+                            <p class="text-sm text-gray-700">Withdraw consent for marketing communications at any time
+                                by clicking "unsubscribe" in our emails.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="bg-blue-50 border border-blue-200 rounded-xl p-6">
+                <h3 class="font-bold text-gray-900 mb-3">How to Exercise Your Rights</h3>
+                <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                    To exercise any of these rights, please contact us using the information provided in the "Contact
+                    Us" section below. We will respond to your request within the timeframe required by applicable law
+                    (typically 30 days). We may need to verify your identity before processing your request to protect
+                    your privacy and security.
+                </p>
+            </div>
+        </section>
+
+        <!-- Additional Sections -->
+        <section class="mb-16">
+            <div class="grid md:grid-cols-2 gap-6">
+                <!-- Data Retention -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-2xl mr-3">📅</span>
+                        Data Retention
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        We retain your personal information only for as long as necessary to fulfill the purposes for
+                        which it was collected, comply with legal obligations, resolve disputes, and enforce our
+                        agreements.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        When your information is no longer needed, we will securely delete or anonymize it in accordance
+                        with our data retention policies and applicable laws.
+                    </p>
+                </div>
+
+                <!-- Children's Privacy -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-2xl mr-3">👶</span>
+                        Children's Privacy
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        Our services are not directed to individuals under the age of 18. We do not knowingly collect
+                        personal information from children.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        If you believe we have inadvertently collected information from a child, please contact us
+                        immediately, and we will take steps to delete such information from our records.
+                    </p>
+                </div>
+
+                <!-- International Transfers -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-2xl mr-3">🌍</span>
+                        International Transfers
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        Your information may be transferred to and processed in countries other than your country of
+                        residence. These countries may have different data protection laws.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        We ensure appropriate safeguards are in place to protect your information in accordance with
+                        this Privacy Policy and applicable laws.
+                    </p>
+                </div>
+
+                <!-- Policy Updates -->
+                <div class="bg-white border border-gray-200 rounded-xl p-8 shadow-sm">
+                    <h3 class="text-xl font-bold text-gray-900 mb-4 flex items-center">
+                        <span class="text-2xl mr-3">🔄</span>
+                        Policy Updates
+                    </h3>
+                    <p class="text-gray-700 text-sm leading-relaxed mb-4">
+                        We may update this Privacy Policy from time to time to reflect changes in our practices,
+                        technology, legal requirements, or other factors.
+                    </p>
+                    <p class="text-gray-700 text-sm leading-relaxed">
+                        We will notify you of material changes by posting the updated policy on our website with a new
+                        "Last Updated" date. Your continued use of our services constitutes acceptance of the updated
+                        policy.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="scroll-mt-32">
+            <div class="bg-gradient-to-r from-blue-600 to-purple-600 rounded-2xl p-12 text-white text-center">
+                <div class="text-5xl mb-6">📧</div>
+                <h2 class="text-3xl font-bold mb-4">Questions About Your Privacy?</h2>
+                <p class="text-lg text-blue-100 mb-8 max-w-2xl mx-auto">
+                    If you have any questions, concerns, or requests regarding this Privacy Policy or our data
+                    practices, please don't hesitate to reach out.
+                </p>
+
+                <div class="grid md:grid-cols-3 gap-6 max-w-4xl mx-auto mb-8">
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="text-3xl mb-3">✉️</div>
+                        <h3 class="font-bold mb-2">Email Us</h3>
+                        <a href="mailto:privacy@jkdigitalsolutions.com"
+                            class="text-blue-100 hover:text-white text-sm">jkdigitalssolutions@gmail.com</a>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="text-3xl mb-3">📞</div>
+                        <h3 class="font-bold mb-2">Call Us</h3>
+                        <a href="tel:+1234567890" class="text-blue-100 hover:text-white text-sm">+1 (613) 927-2170</a>
+                    </div>
+
+                    <div class="bg-white/10 backdrop-blur-sm rounded-xl p-6">
+                        <div class="text-3xl mb-3">📍</div>
+                        <h3 class="font-bold mb-2">Location</h3>
+                        <p class="text-blue-100 text-sm">Remote</p>
+                    </div>
+                </div>
+
+                <p class="text-sm text-blue-100">
+                    We aim to respond to all inquiries within 48 business hours.
+                </p>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Footer Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                            <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                        </div>
+                        <span class="text-l font-bold text-white-900">JK Digital <br> <span
+                                style="color: grey;">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transforming businesses through innovative digital solutions. We deliver quality solutions that
+                        drive growth and success.
+                    </p>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-sm font-bold mb-3">Subscribe to Newsletter</h4>
+                        <form action="https://formspree.io/f/mvzzbekk" method="post">
+                            <div class="flex">
+
+                                <input type="email" placeholder="Email address" name="customer Mail:"
+                                    class="flex-1 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-l-lg px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                                <button type="submit"
+                                    class="bg-primary hover:bg-primary-dark px-4 rounded-r-lg transition-colors">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Services</a></li>
+                        <li><a href="projects.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Website
+                                Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Digital
+                                Marketing & Advertising</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Social Media
+                                Marketing</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Shopify
+                                Marketing & Custoization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-envelope mt-1 text-primary"></i>
+                            <span>jkdigitalssolutions@gmail.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-phone mt-1 text-primary"></i>
+                            <span>+1 (613) 927-2170</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>Location<br>Remote</span>
+                        </li>
+                    </ul>
+
+                    <!-- Social Links -->
+                    <!-- <div class="flex space-x-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-500 text-sm text-center md:text-left">© 2026 JK Digital Solutions. All rights
+                        reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="policies.html" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-white text-sm transition-colors">Terms &
+                            Conditions</a>
+                        <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Designed by</span>
+                            <span class="text-orange-500 font-semibold">JKDIGITALSOULTIONS</span>
+                        </a>
+                        <!-- <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Hire us on</span>
+                            <span class="text-green-500 font-semibold">Fiverr</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trust Badge -->
+    <div id="trustBadge" class="fixed bottom-5 left-5 right-0 bg-white shadow-2xl border-t border-gray-200 z-50"
+        style="animation: slideUp 0.5s ease-out; width: fit-content; border-radius: 10px;">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex items-start space-x-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-shield-alt text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            <strong class="font-semibold">✓ Verified & Trusted</strong><br>
+                            <span class="text-xs">Secure Payments</span>
+                        </p>
+                    </div>
+                </div>
+                <button id="closeTrustBadge" class="text-gray-400 hover:text-gray-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById("closeTrustBadge").onclick = () => {
+            document.getElementById("trustBadge").style.display = "none";
+        }
+    </script>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollTop"
+        class="fixed bottom-8 right-8 bg-primary hover:bg-primary-dark text-white w-12 h-12 rounded-full shadow-lg flex items-center justify-center transition opacity-0 pointer-events-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <script>
+        // Smooth scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+
+
+        // Scroll to top button
+        const scrollTopBtn = document.getElementById('scrollTop');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                scrollTopBtn.classList.remove('opacity-0', 'pointer-events-none');
+            } else {
+                scrollTopBtn.classList.add('opacity-0', 'pointer-events-none');
+            }
+        });
+
+        scrollTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

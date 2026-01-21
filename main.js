@@ -1,0 +1,199 @@
+const elements = document.querySelectorAll(".animate");
+
+const observer = new IntersectionObserver(
+    entries => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("show");
+            }
+        });
+    },
+    { threshold: 0.2 }
+);
+
+elements.forEach(el => observer.observe(el));
+
+
+// SERVICE DATA
+const serviceData = {
+    website: {
+        title: 'Website Development',
+        icon: `<svg class="w-12 h-12 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9"></path>
+                    </svg>`,
+        gradient: 'from-blue-500 to-blue-600',
+        description: 'Transform your vision into a stunning, high-performance website that captivates visitors and drives real business results.',
+        highlights: [
+            '🧑‍💻 Custom website design',
+            '⚡ Lightning-fast performance',
+            '📱 Mobile-first responsive design',
+            '🎨 Custom brand-aligned design',
+            '🔍 SEO-optimized from day one',
+            '🛠️ Easy content management',
+            '📊 Analytics & tracking setup'
+        ],
+        priceRange: '$1,500 - $10,000+',
+        timeline: '2-6 weeks'
+    },
+    seo: {
+        title: 'SEO Optimization',
+        icon: `<svg class="w-12 h-12 text-orange-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+                    </svg>`,
+        gradient: 'from-orange-500 to-orange-600',
+        description: 'Dominate search rankings and attract qualified leads with data-driven SEO strategies that deliver measurable growth.',
+        highlights: [
+            '🎯 Strategic keyword targeting',
+            '📈 Proven ranking improvements',
+            '🔧 Technical SEO optimization',
+            '📝 Content strategy & optimization',
+            '🔗 Quality backlink building',
+            '📊 Monthly performance reports'
+        ],
+        priceRange: '$800 - $3,000/mo',
+        timeline: 'Ongoing (3-6 month minimum)'
+    },
+    shopify: {
+        title: 'Shopify Marketing',
+        icon: `<svg class="w-12 h-12 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 11V7a4 4 0 00-8 0v4M5 9h14l1 12H4L5 9z"></path>
+                    </svg>`,
+        gradient: 'from-green-500 to-green-600',
+        description: 'Launch a profitable e-commerce store with complete setup, optimization, and marketing strategies designed to maximize sales.',
+        highlights: [
+            '🛍️ Complete store setup',
+            '🎨 Custom theme design',
+            '📧 Email automation flows',
+            '🛒 Cart recovery system',
+            '📱 Social media integration',
+            '💰 Conversion optimization'
+        ],
+        priceRange: '$2,000 - $8,000+',
+        timeline: '3-8 weeks setup + ongoing'
+    },
+    marketing: {
+        title: 'Digital Marketing',
+        icon: `<svg class="w-12 h-12 text-pink-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2m0 0V5a2 2 0 012-2h2a2 2 0 012 2v14a2 2 0 01-2 2h-2a2 2 0 01-2-2z"></path>
+                    </svg>`,
+        gradient: 'from-pink-500 to-pink-600',
+        description: 'Reach your ideal customers with strategic campaigns across Google, Facebook, Instagram, and more that deliver exceptional ROI.',
+        highlights: [
+            '🎯 Multi-channel campaigns',
+            '💡 Data-driven strategy',
+            '🎨 Professional ad creatives',
+            '📊 Real-time optimization',
+            '💰 ROI-focused approach',
+            '📈 Detailed performance reports'
+        ],
+        priceRange: '$1,200 - $5,000/mo',
+        timeline: 'Ongoing (minimum 3 months)'
+    },
+    email: {
+        title: 'Email Marketing',
+        icon: `<svg class="w-12 h-12 text-purple-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                    </svg>`,
+        gradient: 'from-purple-500 to-purple-600',
+        description: 'Build lasting customer relationships and drive consistent revenue with strategic email campaigns and smart automation.',
+        highlights: [
+            '✉️ Automated workflows',
+            '🎨 Beautiful email templates',
+            '📋 List growth strategies',
+            '🤖 Smart segmentation',
+            '📈 A/B testing & optimization',
+            '💸 Revenue tracking'
+        ],
+        priceRange: '$600 - $2,500/mo',
+        timeline: 'Ongoing (2 week setup)'
+    }
+};
+
+// OPEN SERVICE MODAL
+function openModal(service) {
+    const data = serviceData[service];
+    const modal = document.getElementById('serviceModal');
+    const content = document.getElementById('modalContent');
+
+    content.innerHTML = `
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-6 right-6 text-gray-400 hover:text-gray-600 transition-colors">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+
+                <!-- Header with Icon -->
+                <div class="flex items-center mb-6">
+                    <div class="w-16 h-16 bg-gradient-to-br ${data.gradient} rounded-2xl flex items-center justify-center mr-4 shadow-lg text-white" style="color:white;">
+                        ${data.icon}
+                    </div>
+                    <div>
+                        <h2 class="text-3xl font-bold text-gray-900">${data.title}</h2>
+                        <p class="text-gray-500 mt-1">${data.timeline}</p>
+                    </div>
+                </div>
+
+                <!-- Description -->
+                <p class="text-gray-700 text-lg mb-6 leading-relaxed">${data.description}</p>
+
+                <!-- Highlights Grid -->
+                <div class="grid md:grid-cols-2 gap-3 mb-8">
+                    ${data.highlights.map(item => `
+                        <div class="flex items-center bg-gray-50 rounded-lg p-3">
+                            <span class="text-lg">${item}</span>
+                        </div>
+                    `).join('')}
+                </div>
+
+                <!-- Pricing Card -->
+                <div class="gradient-border rounded-2xl p-6 mb-6">
+                    <div class="flex items-center justify-between mb-4">
+                        <div>
+                            <p class="text-sm text-gray-600 mb-1">Investment Range</p>
+                            <p class="text-3xl font-bold bg-gradient-to-r ${data.gradient} bg-clip-text text-transparent">${data.priceRange}</p>
+                        </div>
+                        <svg class="w-12 h-12 text-gray-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <p class="text-sm text-gray-600">Custom pricing based on your specific needs and goals</p>
+                </div>
+
+                <!-- CTA Section -->
+                <div class="bg-gradient-to-r ${data.gradient} rounded-2xl p-8 text-center text-white">
+                    <h3 class="text-2xl font-bold mb-3">Let's Build Something Amazing</h3>
+                    <p class="mb-6 opacity-90">Get a free consultation and custom quote tailored to your business</p>
+                    <a href="contact.html" onclick="closeModal()" class="inline-block bg-white text-gray-900 font-bold px-8 py-4 rounded-xl hover:shadow-xl transition-all transform hover:scale-105">
+                        Get Your Free Quote →
+                    </a>
+                    <p class="text-sm mt-4 opacity-75">✓ Free consultation ✓ No commitment ✓ 24hr response</p>
+                </div>
+            `;
+
+    modal.classList.remove('hidden');
+    modal.classList.add('flex');
+    document.body.style.overflow = 'hidden';
+}
+
+// CLOSSE SERVICE MODAL
+function closeModal() {
+    const modal = document.getElementById('serviceModal');
+    modal.classList.add('hidden');
+    modal.classList.remove('flex');
+    document.body.style.overflow = 'auto';
+}
+
+// Close modal on overlay click
+document.getElementById('serviceModal').addEventListener('click', function (e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Close modal on Escape key
+document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});

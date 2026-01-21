@@ -1,0 +1,1291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Digital - We Build Digital Success Stories</title>
+    <meta name="description"
+        content="Looking for affordable, agency-quality web design and digital marketing? JK Digital Solutions helps startups and small businesses grow online with proven results.">
+    <meta name="title" content="JK Digital Solutions | Affordable Web & Digital Marketing Services">
+    <!-- Indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jkdigitalsolutions.com/">
+
+    <link rel="shortcut icon" href="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" type="image/x-icon">
+
+
+    <!-- Structured data (Schema) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JK Digital Solutions",
+    "url": "https://www.jkdigitalsolutions.com",
+    "logo": "https://www.jkdigitalsolutions.com/logo.png",
+    "description": "Affordable web design and digital marketing agency helping startups and small businesses grow online.",
+    "foundingDate": "2020",
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4169E1',
+                            dark: '#3557CC',
+                        },
+                        dark: {
+                            DEFAULT: '#1F2937',
+                            900: '#0F172A',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-50px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(50px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        @keyframes slideDown {
+            from {
+                opacity: 0;
+                max-height: 0;
+            }
+
+            to {
+                opacity: 1;
+                max-height: 500px;
+            }
+        }
+
+        .animate-fade-in-up {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.5s ease-out forwards;
+        }
+
+        .modal-backdrop {
+            transition: background-color 0.3s ease-out;
+            background-color: rgba(0, 0, 0, 0);
+        }
+
+        .modal-backdrop.show {
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .modal-content {
+            animation: scaleIn 0.3s ease-out forwards;
+        }
+
+        .modal-content::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .modal-content::-webkit-scrollbar-track {
+            background: transparent;
+        }
+
+        .modal-content::-webkit-scrollbar-thumb {
+            background: #CBD5E0;
+            border-radius: 10px;
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out, opacity 0.3s ease-out;
+            opacity: 0;
+        }
+
+        .faq-answer.active {
+            max-height: 500px;
+            opacity: 1;
+        }
+
+        .faq-icon {
+            transition: transform 0.3s ease;
+        }
+
+        .faq-icon.rotated {
+            transform: rotate(45deg);
+        }
+
+        .blog-card {
+            transition: all 0.3s ease;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+        }
+
+        .gradient-text {
+            background: linear-gradient(135deg, #3B82F6 0%, #1D4ED8 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .category-badge {
+            transition: all 0.2s ease;
+        }
+
+        .category-badge:hover {
+            transform: scale(1.05);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-50">
+
+    <!-- Header Section -->
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                        <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                    </div>
+                    <span class="text-l font-bold text-gray-900">JK Digital <br> <span
+                            style="color: grey;">Solutions</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">About</a></li>
+                    <li><a href="services.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a></li>
+                    <li><a href="projects.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a></li>
+                    <li><a href="testimonial.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a></li>
+                    <li><a href="blog.html" class="text-primary font-bold border-b-2 border-primary">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a></li>
+                    <li><a href="contact.html"
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-0.5">Get
+                            Started</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-900 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="lg:hidden hidden mt-4 pb-4">
+                <ul class="space-y-4">
+                    <li><a href="index.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">About</a></li>
+                    <li><a href="services.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+                    </li>
+                    <li><a href="testimonial.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a>
+                    </li>
+                    <li><a href="blog.html" class="text-primary font-bold border-b-2 border-primary">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block bg-primary text-white px-6 py-2.5 rounded-lg font-semibold text-center hover:bg-primary-dark transition-all">Get
+                            Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-br from-blue-600 via-blue-700 to-indigo-800 text-white py-20 px-4">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 animate-fade-in-up">
+                Digital Insights & Solutions
+            </h2>
+            <p class="text-xl md:text-2xl text-blue-100 mb-8 max-w-3xl mx-auto animate-fade-in-up">
+                Expert guidance on web development, digital marketing, and growing your online presence
+            </p>
+            <div class="flex flex-wrap gap-4 justify-center animate-fade-in-up">
+                <button onclick="filterBlogs('all')"
+                    class="category-badge bg-white text-blue-600 px-6 py-3 rounded-lg font-semibold shadow-lg hover:shadow-xl">
+                    All Articles
+                </button>
+                <button onclick="filterBlogs('development')"
+                    class="category-badge bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-400">
+                    Development
+                </button>
+                <button onclick="filterBlogs('marketing')"
+                    class="category-badge bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-400">
+                    Marketing
+                </button>
+                <button onclick="filterBlogs('design')"
+                    class="category-badge bg-blue-500 text-white px-6 py-3 rounded-lg font-semibold hover:bg-blue-400">
+                    Design
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Grid Section -->
+    <section id="blog" class="py-16 px-4 max-w-7xl mx-auto">
+        <div class="mb-12 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Latest Articles</h2>
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto">
+                Discover actionable insights and proven strategies to grow your business online
+            </p>
+        </div>
+
+        <div id="blogGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Blog cards will be dynamically inserted here -->
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="py-16 px-4 bg-white">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Frequently Asked Questions</h2>
+                <p class="text-lg text-gray-600">
+                    Get answers to common questions about our services
+                </p>
+            </div>
+
+            <div class="space-y-4" id="faqContainer">
+                <!-- FAQ items will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="py-20 px-4 bg-gradient-to-r from-blue-600 to-indigo-600 text-white">
+        <div class="max-w-4xl mx-auto text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">Ready to Transform Your Digital Presence?</h2>
+            <p class="text-xl mb-8 text-blue-100">
+                Let's discuss how we can help you achieve your business goals
+            </p>
+            <a href="contact.html"><button
+                    class="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-gray-100 transition-all transform hover:scale-105 shadow-xl">
+                    Get Started Today
+                </button></a>
+        </div>
+    </section>
+
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Footer Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                            <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                        </div>
+                        <span class="text-l font-bold text-white-900">JK Digital <br> <span
+                                style="color: grey;">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transforming businesses through innovative digital solutions. We deliver quality solutions that
+                        drive growth and success.
+                    </p>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-sm font-bold mb-3">Subscribe to Newsletter</h4>
+                        <form action="https://formspree.io/f/mvzzbekk" method="post">
+                            <div class="flex">
+
+                                <input type="email" placeholder="Email address" name="customer Mail:"
+                                    class="flex-1 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-l-lg px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                                <button type="submit"
+                                    class="bg-primary hover:bg-primary-dark px-4 rounded-r-lg transition-colors">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Services</a></li>
+                        <li><a href="projects.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Website
+                                Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Digital
+                                Marketing & Advertising</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Social Media
+                                Marketing</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Shopify
+                                Marketing & Custoization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-envelope mt-1 text-primary"></i>
+                            <span>jkdigitalssolutions@gmail.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-phone mt-1 text-primary"></i>
+                            <span>+1 (613) 927-2170</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>Location<br>Remote</span>
+                        </li>
+                    </ul>
+
+                    <!-- Social Links -->
+                    <!-- <div class="flex space-x-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-500 text-sm text-center md:text-left">© 2026 JK Digital Solutions. All rights
+                        reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="policies.html" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-white text-sm transition-colors">Terms &
+                            Conditions</a>
+                        <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Designed by</span>
+                            <span class="text-orange-500 font-semibold">JKDIGITALSOULTIONS</span>
+                        </a>
+                        <!-- <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Hire us on</span>
+                            <span class="text-green-500 font-semibold">Fiverr</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trust Badge -->
+    <div id="trustBadge" class="fixed bottom-5 left-5 right-0 bg-white shadow-2xl border-t border-gray-200 z-50"
+        style="animation: slideUp 0.5s ease-out; width: fit-content; border-radius: 10px;">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex items-start space-x-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-shield-alt text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            <strong class="font-semibold">✓ Verified & Trusted</strong><br>
+                            <span class="text-xs">Secure Payments</span>
+                        </p>
+                    </div>
+                </div>
+                <button id="closeTrustBadge" class="text-gray-400 hover:text-gray-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-primary-dark transition-all opacity-0 invisible hover:-translate-y-1 z-40">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- Blog Modal -->
+    <div id="blogModal" class="modal-backdrop fixed inset-0 z-50 hidden items-center justify-center p-4">
+        <div
+            class="modal-content relative bg-white rounded-2xl shadow-2xl w-full max-w-4xl max-h-[90vh] overflow-y-auto">
+            <button id="closeModal"
+                class="absolute top-6 right-6 p-2 rounded-full hover:bg-gray-100 transition-colors z-10 group">
+                <svg class="w-6 h-6 text-gray-400 group-hover:text-gray-600" fill="none" stroke="currentColor"
+                    viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                </svg>
+            </button>
+
+            <div id="modalContent" class="p-8 md:p-12">
+                <!-- Modal content will be dynamically inserted -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Cookie Banner
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptCookies = document.getElementById('acceptCookies');
+        const declineCookies = document.getElementById('declineCookies');
+
+        // Check if user has already made a choice
+        if (localStorage.getItem('cookieConsent')) {
+            cookieBanner.style.display = 'none';
+        }
+
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.style.display = 'none';
+        });
+
+        declineCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieBanner.style.display = 'none';
+        });
+
+        // Newsletter Form Submit
+        const newsletterForm = document.querySelector('footer form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for subscribing to our newsletter!');
+                e.target.reset();
+            });
+        }
+    </script>
+
+    <script>
+        // Blog Articles Data
+        var blogArticles = [
+            {
+                id: 1,
+                category: 'development',
+                title: 'Why Your Business Needs a Professional Website in 2024',
+                excerpt: 'Discover why having a professional website is no longer optional for businesses and how it can transform your customer acquisition.',
+                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&q=80',
+                readTime: '5 min read',
+                date: 'Jan 15, 2024',
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">The Digital Revolution is Here</h3>
+                    <p class="mb-4">In today's digital-first world, your website is often the first impression potential customers have of your business. Studies show that 75% of consumers judge a company's credibility based on their website design.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">The Problem Most Businesses Face</h3>
+                    <p class="mb-4">Many business owners struggle with:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Low online visibility and difficulty attracting new customers</li>
+                        <li>Outdated websites that don't work on mobile devices</li>
+                        <li>Losing customers to competitors with better online presence</li>
+                        <li>Inability to showcase products and services effectively</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">The Solution: A Professional Website</h3>
+                    <p class="mb-4">A well-designed website provides:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li><strong>24/7 Availability:</strong> Your business works around the clock</li>
+                        <li><strong>Credibility:</strong> Build trust with professional presentation</li>
+                        <li><strong>Lead Generation:</strong> Convert visitors into customers</li>
+                        <li><strong>Cost-Effective Marketing:</strong> Reach more customers for less</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Key Features Your Website Must Have</h3>
+                    <ol class="list-decimal pl-6 mb-6 space-y-3">
+                        <li><strong>Mobile Responsiveness:</strong> Over 60% of web traffic comes from mobile devices</li>
+                        <li><strong>Fast Loading Speed:</strong> Users abandon sites that take longer than 3 seconds to load</li>
+                        <li><strong>Clear Call-to-Actions:</strong> Guide visitors toward conversion</li>
+                        <li><strong>SEO Optimization:</strong> Be found when customers search for your services</li>
+                    </ol>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Take Action Now</h3>
+                    <p class="mb-4">Don't let your competitors capture the customers that should be yours. A professional website is an investment that pays dividends through increased visibility, credibility, and sales.</p>
+                    <p class="mb-4">Ready to transform your online presence? Let's create a website that works as hard as you do.</p>
+                `
+            },
+            {
+                id: 2,
+                category: 'marketing',
+                title: 'Digital Marketing Strategies That Actually Work in 2024',
+                excerpt: 'Learn the proven digital marketing tactics that drive real results for small and medium businesses.',
+                image: 'https://images.unsplash.com/photo-1533750516457-a7f992034fec?w=800&q=80',
+                readTime: '7 min read',
+                date: 'Jan 12, 2024',
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Marketing in the Modern Age</h3>
+                    <p class="mb-4">Digital marketing has become the most cost-effective way to reach your target audience. But with so many options, where should you focus your efforts?</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Common Marketing Challenges</h3>
+                    <p class="mb-4">Business owners often struggle with:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Limited marketing budget and unclear ROI</li>
+                        <li>Difficulty reaching the right audience</li>
+                        <li>Inconsistent brand messaging across platforms</li>
+                        <li>Lack of time and expertise to manage campaigns</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 1: Content Marketing</h3>
+                    <p class="mb-4">Create valuable content that solves your customers' problems. This establishes you as an authority and builds trust. Focus on:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Blog posts answering common questions</li>
+                        <li>Video tutorials and demonstrations</li>
+                        <li>Case studies showcasing results</li>
+                        <li>Social media content that engages</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 2: Search Engine Optimization (SEO)</h3>
+                    <p class="mb-4">90% of online experiences begin with a search engine. SEO ensures you're found when customers search for your services:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Optimize for local searches</li>
+                        <li>Create high-quality, keyword-rich content</li>
+                        <li>Build quality backlinks</li>
+                        <li>Improve website speed and user experience</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 3: Email Marketing</h3>
+                    <p class="mb-4">Email delivers the highest ROI of any marketing channel - $42 for every $1 spent. Build your list and nurture relationships with:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Welcome sequences for new subscribers</li>
+                        <li>Regular newsletters with valuable content</li>
+                        <li>Promotional campaigns and special offers</li>
+                        <li>Personalized recommendations</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 4: Social Media Marketing</h3>
+                    <p class="mb-4">Connect with your audience where they spend their time. Focus on platforms where your customers are most active and create engaging content that sparks conversations.</p>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Measuring Success</h3>
+                    <p class="mb-4">Track these key metrics:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Website traffic and conversion rates</li>
+                        <li>Email open and click-through rates</li>
+                        <li>Social media engagement and reach</li>
+                        <li>Return on ad spend (ROAS)</li>
+                    </ul>
+
+                    <p class="mb-4 mt-8">The key to successful digital marketing is consistency and adaptation. Start with one or two strategies, master them, then expand your efforts.</p>
+                `
+            },
+            {
+                id: 3,
+                category: 'design',
+                title: 'UI/UX Design Principles That Convert Visitors to Customers',
+                excerpt: 'Understanding how design psychology can dramatically improve your website conversion rates.',
+                image: 'https://images.unsplash.com/photo-1561070791-2526d30994b5?w=800&q=80',
+                readTime: '6 min read',
+                date: 'Jan 10, 2024',
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Design is More Than Aesthetics</h3>
+                    <p class="mb-4">Great design isn't just about looking good - it's about creating an intuitive experience that guides users toward taking action. Every element should serve a purpose.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">The Cost of Poor Design</h3>
+                    <p class="mb-4">Businesses lose customers daily due to:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Confusing navigation and unclear information hierarchy</li>
+                        <li>Slow loading times and poor mobile experience</li>
+                        <li>Overwhelming choices leading to decision paralysis</li>
+                        <li>Lack of trust signals and credibility markers</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Principle 1: Visual Hierarchy</h3>
+                    <p class="mb-4">Guide users' attention to the most important elements:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Use size and color to emphasize key information</li>
+                        <li>Create clear pathways through your content</li>
+                        <li>Place important CTAs above the fold</li>
+                        <li>Use white space effectively to reduce clutter</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Principle 2: Consistency</h3>
+                    <p class="mb-4">Maintain consistent design patterns throughout your site:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Use the same button styles and colors</li>
+                        <li>Maintain consistent spacing and typography</li>
+                        <li>Keep navigation in the same location</li>
+                        <li>Use familiar icons and patterns</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Principle 3: Accessibility</h3>
+                    <p class="mb-4">Design for all users, including those with disabilities:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Ensure sufficient color contrast</li>
+                        <li>Provide alternative text for images</li>
+                        <li>Make interactive elements keyboard accessible</li>
+                        <li>Use clear, readable fonts</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Principle 4: Mobile-First Design</h3>
+                    <p class="mb-4">With mobile traffic dominating, design for small screens first:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Prioritize content for small screens</li>
+                        <li>Use touch-friendly button sizes</li>
+                        <li>Optimize images for faster loading</li>
+                        <li>Simplify navigation for mobile users</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Principle 5: Loading Speed</h3>
+                    <p class="mb-4">Every second counts. Pages that load in 1 second have 3x higher conversion rates than those that take 5 seconds.</p>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Testing and Iteration</h3>
+                    <p class="mb-4">Good design is never finished. Continuously test and improve:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>A/B test different designs and layouts</li>
+                        <li>Gather user feedback regularly</li>
+                        <li>Monitor analytics and heatmaps</li>
+                        <li>Stay updated with design trends</li>
+                    </ul>
+
+                    <p class="mb-4 mt-8">Remember: The best design is invisible. Users should navigate your site effortlessly, focused on their goals rather than figuring out how to use your interface.</p>
+                `
+            },
+            {
+                id: 4,
+                category: 'development',
+                title: 'Website Speed Optimization: Why Every Second Matters',
+                excerpt: 'How slow loading times are costing you customers and what you can do about it.',
+                image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800&q=80',
+                readTime: '5 min read',
+                date: 'Jan 8, 2024',
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">The Speed Crisis</h3>
+                    <p class="mb-4">Your website's loading speed directly impacts your bottom line. Research shows that a 1-second delay in page response can result in a 7% reduction in conversions.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">The Real Cost of Slow Websites</h3>
+                    <p class="mb-4">Slow websites lead to:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>53% of mobile users abandon sites that take longer than 3 seconds to load</li>
+                        <li>Lower search engine rankings (Google uses speed as a ranking factor)</li>
+                        <li>Reduced customer satisfaction and trust</li>
+                        <li>Lost revenue from abandoned shopping carts</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Common Speed Killers</h3>
+                    <p class="mb-4">What's slowing down your site:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Unoptimized images (often 50-70% of page weight)</li>
+                        <li>Too many HTTP requests</li>
+                        <li>Render-blocking JavaScript and CSS</li>
+                        <li>Poor server response times</li>
+                        <li>Lack of browser caching</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Solution 1: Image Optimization</h3>
+                    <p class="mb-4">Images are usually the biggest culprit:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Compress images without losing quality</li>
+                        <li>Use modern formats like WebP</li>
+                        <li>Implement lazy loading for below-fold images</li>
+                        <li>Serve appropriately sized images for different devices</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Solution 2: Minimize HTTP Requests</h3>
+                    <p class="mb-4">Reduce the number of files your site needs to load:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Combine CSS and JavaScript files</li>
+                        <li>Use CSS sprites for icons</li>
+                        <li>Remove unnecessary plugins and scripts</li>
+                        <li>Inline critical CSS</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Solution 3: Leverage Browser Caching</h3>
+                    <p class="mb-4">Store static files in users' browsers:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Set appropriate cache headers</li>
+                        <li>Use versioned file names for cache busting</li>
+                        <li>Implement service workers for offline functionality</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Solution 4: Use a Content Delivery Network (CDN)</h3>
+                    <p class="mb-4">Serve content from servers closest to your users. CDNs can reduce load times by 50% or more for international visitors.</p>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Solution 5: Optimize Your Code</h3>
+                    <p class="mb-4">Clean, efficient code loads faster:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Minify HTML, CSS, and JavaScript</li>
+                        <li>Remove unused code and dependencies</li>
+                        <li>Defer non-critical JavaScript</li>
+                        <li>Use efficient database queries</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Measuring Performance</h3>
+                    <p class="mb-4">Use these tools to monitor your site speed:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Google PageSpeed Insights</li>
+                        <li>GTmetrix</li>
+                        <li>WebPageTest</li>
+                        <li>Chrome DevTools Lighthouse</li>
+                    </ul>
+
+                    <p class="mb-4 mt-8">Website speed optimization is an ongoing process. Regular monitoring and improvements ensure you're providing the best possible experience for your users.</p>
+                `
+            },
+            {
+                id: 5,
+                category: 'marketing',
+                title: 'Building a Strong Brand Identity Online',
+                excerpt: 'Create a memorable brand that resonates with your target audience and stands out from competitors.',
+                image: 'https://images.unsplash.com/photo-1559136555-9303baea8ebd?w=800&q=80',
+                readTime: '6 min read',
+                date: 'Jan 5, 2024',
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">Your Brand is Your Promise</h3>
+                    <p class="mb-4">A strong brand identity is more than just a logo - it's the complete experience customers have with your business. It's what makes you memorable and different from competitors.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Why Brand Identity Matters</h3>
+                    <p class="mb-4">Businesses with strong brands benefit from:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Higher customer loyalty and repeat business</li>
+                        <li>Ability to charge premium prices</li>
+                        <li>Easier customer acquisition through word-of-mouth</li>
+                        <li>Stronger market positioning against competitors</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Common Branding Mistakes</h3>
+                    <p class="mb-4">Avoid these pitfalls:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Inconsistent messaging across platforms</li>
+                        <li>Trying to appeal to everyone instead of a specific audience</li>
+                        <li>Copying competitors instead of differentiating</li>
+                        <li>Neglecting the visual identity</li>
+                        <li>Failing to deliver on brand promises</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Step 1: Define Your Brand Strategy</h3>
+                    <p class="mb-4">Start with the foundation:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Identify your unique value proposition</li>
+                        <li>Define your target audience clearly</li>
+                        <li>Establish your brand personality and voice</li>
+                        <li>Determine your core values and mission</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Step 2: Create Visual Identity</h3>
+                    <p class="mb-4">Your visual brand should be instantly recognizable:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Design a memorable logo</li>
+                        <li>Choose a consistent color palette</li>
+                        <li>Select appropriate typography</li>
+                        <li>Create brand guidelines for consistency</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Step 3: Craft Your Brand Voice</h3>
+                    <p class="mb-4">How you communicate is as important as what you say:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Develop a consistent tone across all channels</li>
+                        <li>Create messaging that resonates with your audience</li>
+                        <li>Tell your brand story authentically</li>
+                        <li>Use language your customers understand</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Step 4: Build Brand Consistency</h3>
+                    <p class="mb-4">Apply your brand everywhere:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Website and digital properties</li>
+                        <li>Social media profiles</li>
+                        <li>Marketing materials</li>
+                        <li>Customer communications</li>
+                    </ul>
+
+                    <p class="mb-4 mt-8">Building a strong brand takes time, but the investment pays off through increased recognition, loyalty, and business growth.</p>
+                `
+            },
+            {
+                id: 6,
+                category: 'development',
+                title: 'E-commerce Best Practices: Turning Browsers into Buyers',
+                excerpt: 'Proven strategies to optimize your online store and increase sales conversions.',
+                image: 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=800&q=80',
+                readTime: '8 min read',
+                date: 'Jan 3, 2024',
+                content: `
+                    <h3 class="text-2xl font-bold mb-4">The E-commerce Challenge</h3>
+                    <p class="mb-4">The average e-commerce conversion rate is only 2-3%. That means 97-98% of visitors leave without buying. Small improvements in conversion rate can dramatically impact revenue.</p>
+                    
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Common E-commerce Problems</h3>
+                    <p class="mb-4">Online stores struggle with:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>High cart abandonment rates (average 70%)</li>
+                        <li>Complicated checkout processes</li>
+                        <li>Poor product photography and descriptions</li>
+                        <li>Lack of trust signals and security indicators</li>
+                        <li>Limited payment options</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 1: Optimize Product Pages</h3>
+                    <p class="mb-4">Your product pages must sell:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Use high-quality images from multiple angles</li>
+                        <li>Write compelling, benefit-focused descriptions</li>
+                        <li>Display clear pricing and availability</li>
+                        <li>Show customer reviews and ratings</li>
+                        <li>Include size guides and specifications</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 2: Simplify Checkout</h3>
+                    <p class="mb-4">Remove friction from the buying process:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Offer guest checkout option</li>
+                        <li>Minimize form fields</li>
+                        <li>Show progress indicators</li>
+                        <li>Provide multiple payment methods</li>
+                        <li>Display security badges prominently</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 3: Build Trust</h3>
+                    <p class="mb-4">Customers buy from businesses they trust:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Display security certificates</li>
+                        <li>Show real customer testimonials</li>
+                        <li>Offer clear return policies</li>
+                        <li>Provide multiple contact methods</li>
+                        <li>Use trust badges from recognized authorities</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 4: Reduce Cart Abandonment</h3>
+                    <p class="mb-4">Recover lost sales:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Send cart abandonment emails</li>
+                        <li>Offer free shipping thresholds</li>
+                        <li>Display shipping costs early</li>
+                        <li>Save carts for returning customers</li>
+                        <li>Use exit-intent popups with offers</li>
+                    </ul>
+
+                    <h3 class="text-2xl font-bold mb-4 mt-8">Strategy 5: Personalization</h3>
+                    <p class="mb-4">Tailor the experience to each customer:</p>
+                    <ul class="list-disc pl-6 mb-6 space-y-2">
+                        <li>Show recommended products</li>
+                        <li>Display recently viewed items</li>
+                        <li>Send personalized email campaigns</li>
+                        <li>Offer dynamic pricing and promotions</li>
+                    </ul>
+
+                    <p class="mb-4 mt-8">Success in e-commerce comes from continuously testing and optimizing. Small improvements compound over time to significantly increase your revenue.</p>
+                `
+            }
+        ];
+
+        // FAQ Data
+        var faqData = [
+            {
+                question: 'How long does it take to build a professional website?',
+                answer: 'The timeline depends on the complexity of your project. A basic website typically takes 2-3 weeks, while a custom e-commerce site or complex web application may take 6-12 weeks. We work with you to establish realistic timelines and keep you updated throughout the development process.'
+            },
+            {
+                question: 'Do I need to provide content for my website?',
+                answer: 'While we can help with content creation, you know your business best. We recommend you provide key information about your services, products, and unique value proposition. We can then polish and optimize this content for your website and SEO.'
+            },
+            {
+                question: 'Will my website work on mobile devices?',
+                answer: 'Absolutely! All websites we build are fully responsive and optimized for mobile devices. With over 60% of web traffic coming from mobile, we ensure your site looks great and functions perfectly on all screen sizes.'
+            },
+            {
+                question: 'Can I update my website myself after it is built?',
+                answer: 'Yes! We build websites with user-friendly content management systems that allow you to make updates easily. We also provide training and documentation to help you manage your site confidently.'
+            },
+            {
+                question: 'What is the difference between web design and web development?',
+                answer: 'Web design focuses on the visual aspects - layout, colors, typography, and user experience. Web development involves the technical implementation - coding, functionality, databases, and backend systems. We handle both to create complete, professional websites.'
+            },
+            {
+                question: 'How much does a website cost?',
+                answer: 'Website costs vary based on complexity, features, and your specific needs. Basic websites start around $299, while custom solutions can range from $2,500 to $10,000+. We offer free consultations to provide accurate quotes based on your requirements.'
+            },
+            {
+                question: 'Do you provide website hosting?',
+                answer: 'Yes, we can handle your hosting needs or work with your preferred hosting provider. We recommend reliable hosting solutions that ensure your site loads quickly and stays secure.'
+            },
+            {
+                question: 'Will my website be search engine optimized?',
+                answer: 'Every website we build includes basic SEO optimization - proper structure, meta tags, fast loading speeds, and mobile responsiveness. We also offer advanced SEO services to help you rank higher in search results.'
+            },
+            {
+                question: 'What happens if I need changes after the website is launched?',
+                answer: 'We provide ongoing support and maintenance services. Minor updates are often included in maintenance packages, while larger changes are quoted separately. We are always here to help your website evolve with your business.'
+            },
+            {
+                question: 'How do you ensure my website is secure?',
+                answer: 'Security is a priority. We implement SSL certificates, regular updates, secure hosting, strong passwords, and follow best practices for web security. We also offer ongoing security monitoring and maintenance services.'
+            }
+        ];
+
+        // Render Blog Grid
+        function renderBlogs(filter) {
+            var grid = document.getElementById('blogGrid');
+            grid.innerHTML = '';
+
+            var filtered = filter === 'all'
+                ? blogArticles
+                : blogArticles.filter(function (article) { return article.category === filter; });
+
+            filtered.forEach(function (article, index) {
+                var card = document.createElement('div');
+                card.className = 'blog-card bg-white rounded-xl overflow-hidden shadow-lg cursor-pointer';
+                card.onclick = function () { openBlogModal(article.id); };
+
+                card.innerHTML =
+                    '<div class="relative h-48 overflow-hidden">' +
+                    '<img src="' + article.image + '" alt="' + article.title + '" class="w-full h-full object-cover">' +
+                    '<div class="absolute top-4 right-4 bg-white px-3 py-1 rounded-full text-xs font-semibold text-blue-600 capitalize">' +
+                    article.category +
+                    '</div>' +
+                    '</div>' +
+                    '<div class="p-6">' +
+                    '<div class="flex items-center gap-4 text-sm text-gray-500 mb-3">' +
+                    '<span>' + article.date + '</span>' +
+                    '<span>•</span>' +
+                    '<span>' + article.readTime + '</span>' +
+                    '</div>' +
+                    '<h3 class="text-xl font-bold text-gray-900 mb-3 line-clamp-2">' + article.title + '</h3>' +
+                    '<p class="text-gray-600 mb-4 line-clamp-3">' + article.excerpt + '</p>' +
+                    '<button class="text-blue-600 font-semibold hover:text-blue-700 flex items-center gap-2 group">' +
+                    'Read More' +
+                    '<svg class="w-4 h-4 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+                    '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>' +
+                    '</svg>' +
+                    '</button>' +
+                    '</div>';
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Filter Blogs
+        function filterBlogs(category) {
+            category.target.style.background = "red";
+            renderBlogs(category);
+        }
+
+        // Trust Badge
+        const trustBadge = document.getElementById('trustBadge');
+        const closeTrustBadge = document.getElementById('closeTrustBadge');
+
+        // Check if user has already closed the badge
+        if (sessionStorage.getItem('trustBadgeClosed')) {
+            trustBadge.style.display = 'none';
+        }
+
+        closeTrustBadge.addEventListener('click', () => {
+            trustBadge.style.animation = 'slideDown 0.5s ease-out';
+            setTimeout(() => {
+                trustBadge.style.display = 'none';
+            }, 500);
+            sessionStorage.setItem('trustBadgeClosed', 'true');
+        });
+
+        // Render FAQ
+        function renderFAQ() {
+            var container = document.getElementById('faqContainer');
+            faqData.forEach(function (item, index) {
+                var faqItem = document.createElement('div');
+                faqItem.className = 'bg-white rounded-lg shadow-md overflow-hidden';
+
+                faqItem.innerHTML =
+                    '<button class="faq-button w-full px-6 py-5 text-left flex items-center justify-between hover:bg-gray-50 transition-colors" onclick="toggleFAQ(' + index + ')">' +
+                    '<span class="font-semibold text-gray-900 pr-8">' + item.question + '</span>' +
+                    '<svg class="faq-icon w-6 h-6 text-blue-600 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">' +
+                    '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"/>' +
+                    '</svg>' +
+                    '</button>' +
+                    '<div class="faq-answer px-6 pb-5 text-gray-600">' +
+                    '<p>' + item.answer + '</p>' +
+                    '</div>';
+
+                container.appendChild(faqItem);
+            });
+        }
+
+        // Toggle FAQ
+        function toggleFAQ(index) {
+            var answers = document.querySelectorAll('.faq-answer');
+            var icons = document.querySelectorAll('.faq-icon');
+
+            answers[index].classList.toggle('active');
+            icons[index].classList.toggle('rotated');
+        }
+
+        // Open Blog Modal
+        function openBlogModal(id) {
+            var article = blogArticles.find(function (a) { return a.id === id; });
+            if (!article) return;
+
+            var modal = document.getElementById('blogModal');
+            var modalContent = document.getElementById('modalContent');
+
+            modalContent.innerHTML =
+                '<div class="mb-6">' +
+                '<div class="inline-block bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-semibold capitalize mb-4">' +
+                article.category +
+                '</div>' +
+                '<h2 class="text-3xl md:text-4xl font-bold text-gray-900 mb-4">' + article.title + '</h2>' +
+                '<div class="flex items-center gap-4 text-gray-500 mb-6">' +
+                '<span>' + article.date + '</span>' +
+                '<span>•</span>' +
+                '<span>' + article.readTime + '</span>' +
+                '</div>' +
+                '</div>' +
+                '<img src="' + article.image + '" alt="' + article.title + '" class="w-full h-64 md:h-96 object-cover rounded-xl mb-8">' +
+                '<div class="prose max-w-none text-gray-700 leading-relaxed">' +
+                article.content +
+                '</div>' +
+                '<div class="mt-12 pt-8 border-t border-gray-200">' +
+                '<h3 class="text-2xl font-bold mb-4">Ready to Get Started?</h3>' +
+                '<p class="text-gray-600 mb-6">Let us help you implement these strategies for your business.</p>' +
+                '<a href="contact.html"><button class="bg-blue-600 hover:bg-blue-700 text-white px-8 py-3 rounded-lg font-semibold transition-all transform hover:scale-105">' +
+                'Contact Us Today' +
+                '</button></a>' +
+                '</div>';
+
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+
+            setTimeout(function () {
+                modal.classList.add('show');
+            }, 10);
+        }
+
+        // Close Modal
+        function closeModal() {
+            var modal = document.getElementById('blogModal');
+            modal.classList.remove('show');
+
+            setTimeout(function () {
+                modal.classList.remove('flex');
+                modal.classList.add('hidden');
+                document.body.style.overflow = 'unset';
+            }, 300);
+        }
+
+        document.getElementById('closeModal').addEventListener('click', closeModal);
+        document.getElementById('blogModal').addEventListener('click', function (e) {
+            if (e.target === this) closeModal();
+        });
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') closeModal();
+        });
+
+        // Initialize page
+        renderBlogs('all');
+        renderFAQ();
+    </script>
+
+</body>
+
+</html>

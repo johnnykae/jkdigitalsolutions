@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Digital - We Build Digital Success Stories</title>
+    <meta name="description"
+        content="Looking for affordable, agency-quality web design and digital marketing? JK Digital Solutions helps startups and small businesses grow online with proven results.">
+    <meta name="title" content="JK Digital Solutions | Affordable Web & Digital Marketing Services">
+    <!-- Indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jkdigitalsolutions.com/">
+
+    <link rel="shortcut icon" href="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" type="image/x-icon">
+
+
+    <!-- Structured data (Schema) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JK Digital Solutions",
+    "url": "https://www.jkdigitalsolutions.com",
+    "logo": "https://www.jkdigitalsolutions.com/logo.png",
+    "description": "Affordable web design and digital marketing agency helping startups and small businesses grow online.",
+    "foundingDate": "2020",
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4169E1',
+                            dark: '#3557CC',
+                        },
+                        dark: {
+                            DEFAULT: '#1F2937',
+                            900: '#0F172A',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'float': 'float 6s ease-in-out infinite',
+                        'fade-in-up': 'fadeInUp 0.8s ease-out',
+                        'fade-in': 'fadeIn 0.6s ease-out',
+                        'slide-in-left': 'slideInLeft 0.8s ease-out',
+                        'slide-in-right': 'slideInRight 0.8s ease-out',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px)' },
+                            '50%': { transform: 'translateY(-15px)' },
+                        },
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(40px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        slideInLeft: {
+                            '0%': { opacity: '0', transform: 'translateX(-50px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                        slideInRight: {
+                            '0%': { opacity: '0', transform: 'translateX(50px)' },
+                            '100%': { opacity: '1', transform: 'translateX(0)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .fade-in {
+            animation: fadeIn 0.8s ease-in;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .slide-up {
+            animation: slideUp 0.6s ease-out forwards;
+            opacity: 0;
+        }
+
+        @keyframes slideUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .testimonial-card {
+            opacity: 0;
+            transform: translateY(30px);
+            animation: cardAppear 0.6s ease-out forwards;
+        }
+
+        @keyframes cardAppear {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .stat-item {
+            opacity: 0;
+            transform: scale(0.8);
+            animation: statPop 0.5s ease-out forwards;
+        }
+
+        @keyframes statPop {
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .hover-lift {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .hover-lift:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+        }
+
+        .star-rating {
+            color: #FFD700;
+        }
+
+        .quote-icon {
+            font-size: 3rem;
+            color: #E8EBF7;
+            line-height: 1;
+        }
+
+        .nav-link {
+            position: relative;
+            transition: color 0.3s ease;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: -4px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: #3B82F6;
+            transition: width 0.3s ease;
+        }
+
+        .nav-link:hover::after,
+        .nav-link.active::after {
+            width: 100%;
+        }
+
+        .btn-primary {
+            background: linear-gradient(135deg, #3B82F6 0%, #2563EB 100%);
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(59, 130, 246, 0.3);
+        }
+
+        .footer-gradient {
+            background: linear-gradient(135deg, #1E40AF 0%, #3B82F6 100%);
+        }
+
+        .icon-box {
+            background: rgba(255, 255, 255, 0.1);
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .icon-box:hover {
+            background: rgba(255, 255, 255, 0.2);
+            transform: translateY(-5px);
+        }
+
+        @media (max-width: 768px) {
+            .quote-icon {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-white">
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                        <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                    </div>
+                    <span class="text-l font-bold text-gray-900">JK Digital <br> <span
+                            style="color: grey;">Solutions</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">About</a></li>
+                    <li><a href="services.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a></li>
+                    <li><a href="projects.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a></li>
+                    <li><a href="testimonial.html"
+                            class="text-primary border-b-2 border-primary font-semibold text-dark-900 hover:text-primary font-medium transition-colors">Testimonials</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a></li>
+                    <li><a href="contact.html"
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-0.5">Get
+                            Started</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-900 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="lg:hidden hidden mt-4 pb-4">
+                <ul class="space-y-4">
+                    <li><a href="index.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html" class="block text-primary font-semibold">About</a></li>
+                    <li><a href="services.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+                    </li>
+                    <li><a href="testimonial.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block bg-primary text-white px-6 py-2.5 rounded-lg font-semibold text-center hover:bg-primary-dark transition-all">Get
+                            Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="pt-32 md:pt-40 pb-16 md:pb-24 bg-gradient-to-br from-gray-50 to-blue-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center fade-in">
+                <div class="inline-block mb-4 md:mb-6">
+                    <span class="bg-blue-100 text-blue-600 px-4 py-2 rounded-full text-sm font-medium">
+                        Testimonials
+                    </span>
+                </div>
+                <h1 class="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-4 md:mb-6">
+                    Trusted by Businesses<br>
+                    <span class="text-blue-600">Worldwide</span>
+                </h1>
+                <p class="text-base md:text-lg text-gray-600 max-w-2xl mx-auto px-4">
+                    Do not just take our word for it. Here is what our clients have to say about working with us.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-gray-900 py-12 md:py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-8">
+                <div class="text-center stat-item" style="animation-delay: 0.1s;">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">35+</h3>
+                    <p class="text-sm md:text-base text-gray-400">Happy Clients</p>
+                </div>
+                <div class="text-center stat-item" style="animation-delay: 0.2s;">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">5.0</h3>
+                    <p class="text-sm md:text-base text-gray-400">Average Rating</p>
+                </div>
+                <div class="text-center stat-item" style="animation-delay: 0.3s;">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">50+</h3>
+                    <p class="text-sm md:text-base text-gray-400">Projects Completed</p>
+                </div>
+                <div class="text-center stat-item" style="animation-delay: 0.4s;">
+                    <h3 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-2">98%</h3>
+                    <p class="text-sm md:text-base text-gray-400">Would Recommend</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Grid -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 md:gap-8">
+                <!-- Testimonial Card 1 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.1s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "JK Digital transformed our online presence completely. Their team delivered a stunning website
+                        that exceeded all expectations. The communication was excellent throughout the project and they
+                        were always available to answer questions."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=1" alt="Sarah Johnson"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Sarah Johnson</h4>
+                            <p class="text-sm text-gray-500">CEO, TechStart Inc</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Corporate Website</a>
+                </div>
+
+                <!-- Testimonial Card 2 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.2s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "Working with JK Digital was an absolute pleasure. They understood our vision from day one and
+                        delivered a product that perfectly represents our brand. Their attention to detail and
+                        commitment to quality is unmatched."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=13" alt="Michael Chen"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Michael Chen</h4>
+                            <p class="text-sm text-gray-500">Founder, GreenHub</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Brand Identity</a>
+                </div>
+
+                <!-- Testimonial Card 3 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.3s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "The SEO and digital marketing services from JK Digital have significantly increased our organic
+                        traffic. Our sales have doubled within just three months. They really know what they are doing
+                        and the results speak for themselves."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=5" alt="Emily Rodriguez"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Emily Rodriguez</h4>
+                            <p class="text-sm text-gray-500">Marketing Director, Innovate Co.</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">SEO & Marketing</a>
+                </div>
+
+                <!-- Testimonial Card 4 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.4s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "JK Digital has been performing beyond expectations. Sales increased by 150% in the first
+                        quarter. They truly understand online business and created a store that converts visitors into
+                        customers."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=12" alt="David Thompson"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">David Thompson</h4>
+                            <p class="text-sm text-gray-500">Owner, Thompson Retail</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Shopify Store</a>
+                </div>
+
+                <!-- Testimonial Card 5 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.5s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "As a startup with a limited budget, I was worried about affording quality work. JK Digital not
+                        only fit my budget but also delivered exceptional quality. They treated my project like it was
+                        their own business."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=33" alt="Lisa Wang" class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Lisa Wang</h4>
+                            <p class="text-sm text-gray-500">Startup Founder</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Startup Website</a>
+                </div>
+
+                <!-- Testimonial Card 6 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.6s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "The online ordering system they built for my restaurant is amazing. Easy to use for both
+                        customers and staff. The support team is always there when I need help. Highly recommend!"
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=68" alt="James Miller"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">James Miller</h4>
+                            <p class="text-sm text-gray-500">Restaurant Owner</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Restaurant Website</a>
+                </div>
+
+                <!-- Additional Testimonial Card 7 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.7s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "Outstanding email marketing campaigns! Our open rates increased by 200% and conversions are
+                        through the roof. The team really knows how to craft compelling messages that resonate with our
+                        audience."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=27" alt="Amanda Roberts"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Amanda Roberts</h4>
+                            <p class="text-sm text-gray-500">Marketing Manager</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Email Marketing</a>
+                </div>
+
+                <!-- Additional Testimonial Card 8 -->
+                <div class="bg-white border border-gray-200 rounded-2xl p-6 md:p-8 hover-lift testimonial-card"
+                    style="animation-delay: 0.8s;">
+                    <div class="quote-icon mb-4">"</div>
+                    <div class="flex mb-4">
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                        <i class="fas fa-star star-rating"></i>
+                    </div>
+                    <p class="text-gray-700 mb-6 leading-relaxed text-sm md:text-base">
+                        "JK Digital optimized our Shopify store and the results were immediate. Page load times
+                        decreased dramatically and our conversion rate improved by 45%. Their expertise in e-commerce is
+                        unmatched."
+                    </p>
+                    <div class="flex items-center mb-4">
+                        <img src="https://i.pravatar.cc/150?img=60" alt="Robert Kim"
+                            class="w-12 h-12 rounded-full mr-4">
+                        <div>
+                            <h4 class="font-semibold text-gray-900">Robert Kim</h4>
+                            <p class="text-sm text-gray-500">E-commerce Director</p>
+                        </div>
+                    </div>
+                    <a href="#" class="text-blue-600 font-medium text-sm hover:text-blue-700">Shopify Optimization</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Section -->
+    <section class="footer-gradient py-16 md:py-24">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <div class="flex justify-center space-x-8 md:space-x-12 mb-8 md:mb-12">
+                <div class="icon-box w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-shield-alt text-white text-2xl md:text-3xl"></i>
+                </div>
+                <div class="icon-box w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-award text-white text-2xl md:text-3xl"></i>
+                </div>
+                <div class="icon-box w-16 h-16 md:w-20 md:h-20 rounded-2xl flex items-center justify-center">
+                    <i class="fas fa-users text-white text-2xl md:text-3xl"></i>
+                </div>
+            </div>
+            <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-4 md:mb-6">
+                Your Trust Is Our Greatest Asset
+            </h2>
+            <p class="text-base md:text-lg text-blue-100 max-w-3xl mx-auto mb-8 md:mb-10 px-4">
+                Every project we take on is an opportunity to earn your trust and exceed your expectations. We are
+                committed to delivering results that make you proud to recommend us.
+            </p>
+            <a href="contact.html"><button
+                    class="bg-white text-blue-600 px-8 py-3.5 rounded-full font-semibold hover:bg-blue-50 transition-all duration-300 flex items-center space-x-2 mx-auto transform hover:scale-105">
+                    <span>Join Our Happy Clients</span>
+                    <i class="fas fa-arrow-right"></i>
+                </button></a>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Footer Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                            <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                        </div>
+                        <span class="text-l font-bold text-white-900">JK Digital <br> <span
+                                style="color: grey;">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transforming businesses through innovative digital solutions. We deliver quality solutions that
+                        drive growth and success.
+                    </p>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-sm font-bold mb-3">Subscribe to Newsletter</h4>
+                        <form action="https://formspree.io/f/mvzzbekk" method="post">
+                            <div class="flex">
+
+                                <input type="email" placeholder="Email address" name="customer Mail:"
+                                    class="flex-1 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-l-lg px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                                <button type="submit"
+                                    class="bg-primary hover:bg-primary-dark px-4 rounded-r-lg transition-colors">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Services</a></li>
+                        <li><a href="projects.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Website
+                                Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Digital
+                                Marketing & Advertising</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Social Media
+                                Marketing</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Shopify
+                                Marketing & Custoization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-envelope mt-1 text-primary"></i>
+                            <span>jkdigitalssolutions@gmail.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-phone mt-1 text-primary"></i>
+                            <span>+1 (613) 927-2170</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>Location<br>Remote</span>
+                        </li>
+                    </ul>
+
+                    <!-- Social Links -->
+                    <!-- <div class="flex space-x-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-500 text-sm text-center md:text-left">© 2026 JK Digital Solutions. All rights
+                        reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="policies.html" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-white text-sm transition-colors">Terms &
+                            Conditions</a>
+                        <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Designed by</span>
+                            <span class="text-orange-500 font-semibold">JKDIGITALSOULTIONS</span>
+                        </a>
+                        <!-- <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Hire us on</span>
+                            <span class="text-green-500 font-semibold">Fiverr</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trust Badge -->
+    <div id="trustBadge" class="fixed bottom-5 left-5 right-0 bg-white shadow-2xl border-t border-gray-200 z-50"
+        style="animation: slideUp 0.5s ease-out; width: fit-content; border-radius: 10px;">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex items-start space-x-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-shield-alt text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            <strong class="font-semibold">✓ Verified & Trusted</strong><br>
+                            <span class="text-xs">Secure Payments</span>
+                        </p>
+                    </div>
+                </div>
+                <button id="closeTrustBadge" class="text-gray-400 hover:text-gray-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-primary-dark transition-all opacity-0 invisible hover:-translate-y-1 z-40">
+        <i class="fa fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Cookie Banner
+        const cookieBanner = document.getElementById('cookieBanner');
+        const acceptCookies = document.getElementById('acceptCookies');
+        const declineCookies = document.getElementById('declineCookies');
+
+        // Check if user has already made a choice
+        if (localStorage.getItem('cookieConsent')) {
+            cookieBanner.style.display = 'none';
+        }
+
+        acceptCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'accepted');
+            cookieBanner.style.display = 'none';
+        });
+
+        declineCookies.addEventListener('click', () => {
+            localStorage.setItem('cookieConsent', 'declined');
+            cookieBanner.style.display = 'none';
+        });
+
+        // Newsletter Form Submit
+        const newsletterForm = document.querySelector('footer form');
+        if (newsletterForm) {
+            newsletterForm.addEventListener('submit', (e) => {
+                e.preventDefault();
+                alert('Thank you for subscribing to our newsletter!');
+                e.target.reset();
+            });
+        }
+
+        // Trust Badge
+        const trustBadge = document.getElementById('trustBadge');
+        const closeTrustBadge = document.getElementById('closeTrustBadge');
+
+        // Check if user has already closed the badge
+        if (sessionStorage.getItem('trustBadgeClosed')) {
+            trustBadge.style.display = 'none';
+        }
+
+        closeTrustBadge.addEventListener('click', () => {
+            trustBadge.style.animation = 'slideDown 0.5s ease-out';
+            setTimeout(() => {
+                trustBadge.style.display = 'none';
+            }, 500);
+            sessionStorage.setItem('trustBadgeClosed', 'true');
+        });
+    </script>
+</body>
+
+</html>

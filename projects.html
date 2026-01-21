@@ -1,0 +1,1522 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JK Digital - We Build Digital Success Stories</title>
+    <meta name="description"
+        content="Looking for affordable, agency-quality web design and digital marketing? JK Digital Solutions helps startups and small businesses grow online with proven results.">
+    <meta name="title" content="JK Digital Solutions | Affordable Web & Digital Marketing Services">
+    <!-- Indexing -->
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow">
+
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://www.jkdigitalsolutions.com/">
+
+    <link rel="shortcut icon" href="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" type="image/x-icon">
+
+
+    <!-- Structured data (Schema) -->
+    <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "JK Digital Solutions",
+    "url": "https://www.jkdigitalsolutions.com",
+    "logo": "https://www.jkdigitalsolutions.com/logo.png",
+    "description": "Affordable web design and digital marketing agency helping startups and small businesses grow online.",
+    "foundingDate": "2020",
+    "areaServed": "Worldwide"
+  }
+  </script>
+
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            DEFAULT: '#4169E1',
+                            dark: '#3557CC',
+                        },
+                        dark: {
+                            DEFAULT: '#1F2937',
+                            900: '#0F172A',
+                            950: '#0A0E1A',
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'system-ui', 'sans-serif'],
+                    },
+                    animation: {
+                        'fade-in-up': 'fadeInUp 0.6s ease-out',
+                        'fade-in': 'fadeIn 0.5s ease-out',
+                        'scale-in': 'scaleIn 0.5s ease-out',
+                    },
+                    keyframes: {
+                        fadeInUp: {
+                            '0%': { opacity: '0', transform: 'translateY(30px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' },
+                        },
+                        fadeIn: {
+                            '0%': { opacity: '0' },
+                            '100%': { opacity: '1' },
+                        },
+                        scaleIn: {
+                            '0%': { opacity: '0', transform: 'scale(0.95)' },
+                            '100%': { opacity: '1', transform: 'scale(1)' },
+                        },
+                    },
+                }
+            }
+        }
+    </script>
+
+    <style>
+        .animate-on-scroll {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .animate-on-scroll.animated {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .project-card {
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        .project-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .project-card img {
+            transition: transform 0.6s ease;
+        }
+
+        .project-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .filter-button.active {
+            background: #4169E1;
+            color: white;
+        }
+
+        /* Custom animations */
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes scaleIn {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .animate-slide-up {
+            animation: slideUp 0.6s ease-out forwards;
+        }
+
+        .animate-fade-in {
+            animation: fadeIn 0.4s ease-out forwards;
+        }
+
+        .animate-scale-in {
+            animation: scaleIn 0.3s cubic-bezier(0.4, 0, 0.2, 1) forwards;
+        }
+
+        /* Custom scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #4F7CFF;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #3D63E5;
+        }
+
+        /* Smooth transitions */
+        * {
+            transition-property: background-color, border-color, color, fill, stroke, opacity, box-shadow, transform;
+            transition-duration: 300ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+
+        /* Modal backdrop blur */
+        .modal-backdrop {
+            backdrop-filter: blur(8px);
+        }
+
+        /* Custom scrollbar */
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 8px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: #f1f5f9;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #5B71F5;
+            border-radius: 10px;
+        }
+
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+            background: #4A5FE4;
+        }
+    </style>
+</head>
+
+<body class="font-sans antialiased bg-white">
+
+    <!-- Header -->
+    <header class="bg-white sticky top-0 z-50 shadow-sm">
+        <nav class="container mx-auto px-6 lg:px-8 py-4">
+            <div class="flex items-center justify-between">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center space-x-3">
+                    <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                        <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                    </div>
+                    <span class="text-l font-bold text-gray-900">JK Digital <br> <span
+                            style="color: grey;">Solutions</span>
+                    </span>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <ul class="hidden lg:flex items-center space-x-8">
+                    <li><a href="index.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">About</a></li>
+                    <li><a href="services.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Services</a></li>
+                    <li><a href="projects.html"
+                            class="text-primary font-semibold border-b-2 border-primary">Portfolio</a></li>
+                    <li><a href="testimonial.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a></li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colors">Contact</a></li>
+                    <li><a href="contact.html"
+                            class="bg-primary text-white px-6 py-2.5 rounded-lg font-semibold hover:bg-primary-dark transition-all hover:shadow-lg hover:-translate-y-0.5">Get
+                            Started</a></li>
+                </ul>
+
+                <!-- Mobile Menu Button -->
+                <button id="mobileMenuBtn" class="lg:hidden text-gray-900 text-2xl">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+
+            <!-- Mobile Navigation -->
+            <div id="mobileMenu" class="lg:hidden hidden mt-4 pb-4">
+                <ul class="space-y-4">
+                    <li><a href="index.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Home</a></li>
+                    <li><a href="about.html" class="block text-primary font-semibold">About</a></li>
+                    <li><a href="services.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Services</a>
+                    </li>
+                    <li><a href="projects.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Portfolio</a>
+                    </li>
+                    <li><a href="testimonial.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Testimonials</a>
+                    </li>
+                    <li><a href="blog.html"
+                            class="text-gray-700 hover:text-primary font-medium transition-colorsd">Blog</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block text-gray-700 hover:text-primary font-medium transition-colors">Contact</a>
+                    </li>
+                    <li><a href="contact.html"
+                            class="block bg-primary text-white px-6 py-2.5 rounded-lg font-semibold text-center hover:bg-primary-dark transition-all">Get
+                            Started</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <!-- PROJECT SECTION -->
+
+    <!-- Hero Section -->
+    <section class="bg-gradient-to-b from-blue-50 to-white py-20">
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <div class="inline-block bg-blue-100 text-blue-700 px-4 py-1.5 rounded-full font-medium text-sm mb-6">
+                Our Portfolio
+            </div>
+
+            <h1 class="text-5xl lg:text-6xl font-bold text-gray-900 mb-4 leading-tight">
+                Work That Speaks <span class="text-blue-600">For Itself</span>
+            </h1>
+
+            <p class="text-lg text-gray-600 max-w-2xl mx-auto leading-relaxed">
+                Explore our collection of successful projects. Each one represents our commitment to quality and client
+                satisfaction.
+            </p>
+        </div>
+    </section>
+
+    <!-- Filter Buttons -->
+    <section class="max-w-7xl mx-auto px-6 py-8">
+        <div class="flex flex-wrap justify-center gap-3" id="filterButtons">
+            <button class="filter-btn px-6 py-2.5 rounded-lg font-semibold text-sm bg-blue-600 text-white transition"
+                data-filter="all">
+                All Projects
+            </button>
+            <button
+                class="filter-btn px-6 py-2.5 rounded-lg font-semibold text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                data-filter="website">
+                Website Development
+            </button>
+            <button
+                class="filter-btn px-6 py-2.5 rounded-lg font-semibold text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                data-filter="shopify">
+                Shopify
+            </button>
+            <button
+                class="filter-btn px-6 py-2.5 rounded-lg font-semibold text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                data-filter="seo">
+                SEO
+            </button>
+            <button
+                class="filter-btn px-6 py-2.5 rounded-lg font-semibold text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                data-filter="digital">
+                Digital Marketing
+            </button>
+            <button
+                class="filter-btn px-6 py-2.5 rounded-lg font-semibold text-sm bg-gray-100 text-gray-700 hover:bg-gray-200 transition"
+                data-filter="email">
+                Email Marketing
+            </button>
+        </div>
+    </section>
+
+    <!-- Projects Grid -->
+    <section class="max-w-7xl mx-auto px-6 pb-20">
+        <div id="projectsGrid" class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
+            <!-- Projects will be dynamically inserted here -->
+        </div>
+
+        <!-- See More Projects Button -->
+        <div class="text-center mb-20">
+            <h2 class="text-3xl font-bold text-gray-900 mb-4">Want to See More Projects?</h2>
+            <p class="text-gray-600 mb-8 max-w-2xl mx-auto">
+                We have completed many more projects. Contact us to see our full portfolio and discuss how we can help
+                your business.
+            </p>
+            <a href="contact.html"
+                class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-8 py-3.5 rounded-lg font-semibold transition">
+                Contact Us to See More
+                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6">
+                    </path>
+                </svg>
+            </a>
+        </div>
+
+        <!-- Bottom CTA Section -->
+        <div
+            class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-16 text-center text-white relative overflow-hidden">
+            <div class="absolute top-0 right-0 w-96 h-96 bg-blue-600 opacity-5 rounded-full blur-3xl"></div>
+
+            <div class="relative z-10">
+                <h2 class="text-4xl font-bold mb-4">
+                    Ready to Be Our Next Success Story?
+                </h2>
+                <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                    Let us bring your vision to life. Start your project today and join our growing list of satisfied
+                    clients.
+                </p>
+                <a href="contact.html"
+                    class="inline-flex items-center bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition">
+                    Start Your Project
+                    <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal -->
+    <div id="projectModal"
+        class="fixed inset-0 bg-black bg-opacity-80 backdrop-blur-sm z-50 hidden items-center justify-center p-4 overflow-y-auto">
+        <div id="modalContent"
+            class="bg-white rounded-2xl max-w-6xl w-full max-h-[90vh] overflow-y-auto custom-scrollbar relative">
+            <!-- Content will be dynamically inserted -->
+        </div>
+    </div>
+
+    <script>
+        // Project Data with website links and sales proof
+        const projects = [
+            {
+                id: 1,
+                category: 'shopify',
+                categoryLabel: 'SHOPIFY',
+                categoryBg: 'bg-blue-600',
+                title: 'E-commerce Store Transformation',
+                description: 'Complete Shopify redesign boosting conversions and user satisfaction',
+                image: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800&h=600&fit=crop',
+                client: 'Modern Fashion Boutique',
+                clientWebsite: 'https://modernfashionboutique.com',
+                timeline: '8 weeks',
+                industry: 'Fashion & Retail',
+                salesProof: {
+                    beforeRevenue: '$100/month',
+                    afterRevenue: '$3,000/month',
+                    revenueIncrease: '207%',
+                    roi: '210%',
+                    paybackPeriod: '6 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Poor Mobile Experience',
+                        description: 'Over 70% of traffic was mobile, but conversion rate was only 0.8% due to a cluttered, non-responsive design.'
+                    },
+                    {
+                        title: 'Complex Checkout Process',
+                        description: 'Cart abandonment rate exceeded 82%, with customers dropping off before completing purchases.'
+                    },
+                    {
+                        title: 'Low Search Visibility',
+                        description: 'Site wasn\'t ranking for key product categories, limiting organic traffic growth.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Mobile-First Redesign',
+                        description: 'Implemented a responsive, fast-loading theme optimized for mobile shopping with intuitive navigation.'
+                    },
+                    {
+                        title: 'Streamlined Checkout',
+                        description: 'Reduced checkout steps from 5 to 2, added guest checkout, and integrated express payment options.'
+                    },
+                    {
+                        title: 'SEO Optimization',
+                        description: 'Optimized product pages, meta descriptions, and implemented structured data for better search rankings.'
+                    }
+                ],
+                results: [
+                    { number: '247%', label: 'Increase in Conversions', icon: '📈' },
+                    { number: '64%', label: 'Reduced Cart Abandonment', icon: '🛒' },
+                    { number: '3.8x', label: 'Growth in Organic Traffic', icon: '🔍' },
+                    { number: '4.2s', label: 'Page Load Time', icon: '⚡' }
+                ],
+                tech: ['Shopify Plus', 'Liquid', 'JavaScript', 'Google Analytics', 'Klaviyo'],
+                testimonial: {
+                    text: 'JK Digital Solutions completely transformed our online store. Sales tripled within the first month, and our customers love the new experience. Best investment we\'ve made!',
+                    author: 'Sarah Mitchell',
+                    position: 'Founder at Modern Fashion Boutique',
+                    avatar: '👩‍💼'
+                }
+            },
+            {
+                id: 2,
+                category: 'website',
+                categoryLabel: 'WEBSITE DEVELOPMENT',
+                categoryBg: 'bg-purple-600',
+                title: 'Professional Service Website',
+                description: 'Modern website for a consulting firm with CMS integration',
+                image: 'https://images.unsplash.com/photo-1551650975-87deedd944c3?w=800&h=600&fit=crop',
+                client: 'Elite Business Consultants',
+                clientWebsite: 'https://elitebusinessconsultants.com',
+                timeline: '6 weeks',
+                industry: 'Business Consulting',
+                salesProof: {
+                    beforeRevenue: '3 leads/month',
+                    afterRevenue: '18 leads/month',
+                    revenueIncrease: '220%',
+                    roi: '250%',
+                    paybackPeriod: '4 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Outdated Web Presence',
+                        description: 'Existing site looked unprofessional and didn\'t reflect the company\'s premium positioning.'
+                    },
+                    {
+                        title: 'No Content Management',
+                        description: 'Client couldn\'t update content without developer intervention, causing delays and increased costs.'
+                    },
+                    {
+                        title: 'Poor Lead Generation',
+                        description: 'Website generated fewer than 3 qualified leads per month despite decent traffic levels.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Premium Design Overhaul',
+                        description: 'Created a sophisticated, modern design that positions the firm as industry leaders.'
+                    },
+                    {
+                        title: 'Custom CMS Integration',
+                        description: 'Implemented WordPress with custom blocks, enabling the client to easily update content independently.'
+                    },
+                    {
+                        title: 'Conversion Optimization',
+                        description: 'Strategic placement of CTAs, lead magnets, and optimized contact forms throughout the site.'
+                    }
+                ],
+                results: [
+                    { number: '220%', label: 'More Qualified Leads', icon: '🎯' },
+                    { number: '89%', label: 'Increase in Time on Site', icon: '⏱️' },
+                    { number: '4.7/5', label: 'Client Satisfaction Score', icon: '⭐' },
+                    { number: '100%', label: 'Content Control', icon: '✅' }
+                ],
+                tech: ['WordPress', 'React', 'PHP', 'MySQL', 'HubSpot CRM'],
+                testimonial: {
+                    text: 'Our new website has become our best salesperson. The leads we\'re getting are higher quality, and we can finally update our content whenever we want. Exceptional work!',
+                    author: 'David Chen',
+                    position: 'Managing Partner at Elite Business Consultants',
+                    avatar: '👨‍💼'
+                }
+            },
+            {
+                id: 3,
+                category: 'seo',
+                categoryLabel: 'SEO',
+                categoryBg: 'bg-green-600',
+                title: 'Local Business SEO Campaign',
+                description: 'Comprehensive SEO strategy for local business growth',
+                image: 'luke-chesser-JKUTrJ4vK00-unsplash.jpg',
+                client: 'GreenThumb Landscaping',
+                clientWebsite: 'https://greenthumblandscaping.com',
+                timeline: '4 months',
+                industry: 'Home Services',
+                salesProof: {
+                    beforeRevenue: '2-3 calls/week',
+                    afterRevenue: '15-20 calls/day',
+                    revenueIncrease: '300%',
+                    roi: '500%',
+                    paybackPeriod: '8 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Zero Online Visibility',
+                        description: 'Business didn\'t appear on the first 5 pages of Google for any relevant search terms.'
+                    },
+                    {
+                        title: 'Competitive Market',
+                        description: 'Local competitors dominated search results with established SEO strategies.'
+                    },
+                    {
+                        title: 'Limited Online Presence',
+                        description: 'No Google Business Profile optimization and minimal local citations.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Technical SEO Foundation',
+                        description: 'Fixed site speed issues, implemented schema markup, and optimized site architecture.'
+                    },
+                    {
+                        title: 'Local SEO Domination',
+                        description: 'Optimized Google Business Profile, built 150+ local citations, and earned positive reviews.'
+                    },
+                    {
+                        title: 'Content Strategy',
+                        description: 'Created location-specific service pages and blog content targeting high-intent keywords.'
+                    }
+                ],
+                results: [
+                    { number: '#1', label: 'Google Maps Ranking', icon: '📍' },
+                    { number: '500%', label: 'Increase in Organic Traffic', icon: '📊' },
+                    { number: '43', label: 'First-Page Keywords', icon: '🔑' },
+                    { number: '156%', label: 'More Service Requests', icon: '📞' }
+                ],
+                tech: ['Google Search Console', 'SEMrush', 'Google Business Profile', 'Schema.org', 'Ahrefs'],
+                testimonial: {
+                    text: 'We went from invisible to the top of Google in our area. Phone calls increased dramatically, and we had to hire two more teams to keep up with demand. Incredible results!',
+                    author: 'Mark Thompson',
+                    position: 'Owner at GreenThumb Landscaping',
+                    avatar: '👨‍🌾'
+                }
+            },
+            {
+                id: 4,
+                category: 'email',
+                categoryLabel: 'EMAIL MARKETING',
+                categoryBg: 'bg-pink-600',
+                title: 'Email Marketing Automation',
+                description: 'Automated email sequences for e-commerce success',
+                image: 'https://images.unsplash.com/photo-1563986768494-4dee2763ff3f?w=800&h=600&fit=crop',
+                client: 'Wellness & Beauty Co.',
+                clientWebsite: 'https://wellnessbeautyco.com',
+                timeline: '5 weeks',
+                industry: 'Beauty & Wellness',
+                salesProof: {
+                    beforeRevenue: '8% from email',
+                    afterRevenue: '38% from email',
+                    revenueIncrease: '375%',
+                    roi: '580%',
+                    paybackPeriod: '3 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'No Email Strategy',
+                        description: 'Company was sending occasional promotional emails with poor open rates and zero automation.'
+                    },
+                    {
+                        title: 'High Customer Churn',
+                        description: 'One-time buyers rarely returned for repeat purchases despite product quality.'
+                    },
+                    {
+                        title: 'Inefficient Marketing Spend',
+                        description: 'Over-reliance on paid ads meant high acquisition costs without customer retention.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Welcome Series Development',
+                        description: 'Created a 7-email welcome series educating new subscribers and building brand trust.'
+                    },
+                    {
+                        title: 'Segmentation & Personalization',
+                        description: 'Segmented list by purchase behavior, interests, and engagement for targeted campaigns.'
+                    },
+                    {
+                        title: 'Lifecycle Automation',
+                        description: 'Implemented cart abandonment, post-purchase, win-back, and VIP customer flows.'
+                    }
+                ],
+                results: [
+                    { number: '38%', label: 'Email Revenue Contribution', icon: '💰' },
+                    { number: '52%', label: 'Open Rate Average', icon: '📧' },
+                    { number: '6.8%', label: 'Click-Through Rate', icon: '🖱️' },
+                    { number: '2.3x', label: 'Customer Lifetime Value', icon: '💎' }
+                ],
+                tech: ['Klaviyo', 'Shopify', 'Canva', 'Google Analytics', 'Mailchimp'],
+                testimonial: {
+                    text: 'Email marketing went from an afterthought to our most profitable channel. The automation runs 24/7, bringing in consistent revenue while we sleep. Game-changer!',
+                    author: 'Jessica Williams',
+                    position: 'Marketing Director at Wellness & Beauty Co.',
+                    avatar: '👩‍💻'
+                }
+            },
+            {
+                id: 5,
+                category: 'shopify',
+                categoryLabel: 'SHOPIFY',
+                categoryBg: 'bg-blue-600',
+                title: 'Shopify Store Launch',
+                description: 'New Shopify store launch for fashion boutique',
+                image: 'https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop',
+                client: 'Chic Boutique Fashion',
+                clientWebsite: 'https://chicboutiquefashion.com',
+                timeline: '10 weeks',
+                industry: 'Fashion E-commerce',
+                salesProof: {
+                    beforeRevenue: '$0 (new store)',
+                    afterRevenue: '$5,000/month',
+                    revenueIncrease: 'New Launch',
+                    roi: '520%',
+                    paybackPeriod: '5 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'First-Time E-commerce',
+                        description: 'Client had a physical store but no online presence or e-commerce experience.'
+                    },
+                    {
+                        title: 'Inventory Management',
+                        description: 'Needed seamless integration between in-store POS and online inventory.'
+                    },
+                    {
+                        title: 'Brand Translation',
+                        description: 'Capturing the boutique\'s unique in-store experience in a digital format.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Custom Shopify Build',
+                        description: 'Designed and developed a custom Shopify theme reflecting the boutique\'s aesthetic.'
+                    },
+                    {
+                        title: 'Unified Commerce System',
+                        description: 'Integrated Shopify POS for real-time inventory sync across online and physical store.'
+                    },
+                    {
+                        title: 'Brand Storytelling',
+                        description: 'Created engaging product photography, descriptions, and brand story content.'
+                    }
+                ],
+                results: [
+                    { number: '$5.6K', label: 'First Month Revenue', icon: '💵' },
+                    { number: '3,200+', label: 'Email Subscribers', icon: '👥' },
+                    { number: '4.9/5', label: 'Customer Reviews', icon: '⭐' },
+                    { number: '68%', label: 'Repeat Purchase Rate', icon: '🔄' }
+                ],
+                tech: ['Shopify', 'Shopify POS', 'Oberlo', 'Instagram Shopping', 'Facebook Pixel'],
+                testimonial: {
+                    text: 'Going online seemed overwhelming, but JK Digital made it seamless. We\'re now reaching customers nationwide and our revenue has doubled. Couldn\'t be happier!',
+                    author: 'Amanda Rodriguez',
+                    position: 'Owner at Chic Boutique Fashion',
+                    avatar: '👩‍🎨'
+                }
+            },
+            {
+                id: 6,
+                category: 'digital',
+                categoryLabel: 'DIGITAL MARKETING',
+                categoryBg: 'bg-orange-600',
+                title: 'Digital Marketing Campaign',
+                description: 'Multi-channel marketing campaign for startup',
+                image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop',
+                client: 'TechStart Innovation',
+                clientWebsite: 'https://techstartinnovation.com',
+                timeline: '3 months',
+                industry: 'B2B SaaS',
+                salesProof: {
+                    beforeRevenue: '120 leads/month',
+                    afterRevenue: '1,200 leads/month',
+                    revenueIncrease: '133%',
+                    roi: '210%',
+                    paybackPeriod: '6 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Limited Brand Awareness',
+                        description: 'New product launch with zero market recognition in a competitive tech space.'
+                    },
+                    {
+                        title: 'Tight Marketing Budget',
+                        description: 'Startup budget required strategic, cost-effective marketing channel selection.'
+                    },
+                    {
+                        title: 'Complex Product Education',
+                        description: 'Technical B2B SaaS product requiring educational content for target audience.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Content Marketing Strategy',
+                        description: 'Created thought leadership content, case studies, and educational resources.'
+                    },
+                    {
+                        title: 'LinkedIn B2B Campaigns',
+                        description: 'Targeted LinkedIn ads to decision-makers with compelling value propositions.'
+                    },
+                    {
+                        title: 'Performance Analytics',
+                        description: 'Implemented tracking and optimization based on real-time campaign performance data.'
+                    }
+                ],
+                results: [
+                    { number: '1,200+', label: 'Qualified Leads', icon: '🎯' },
+                    { number: '210%', label: 'ROI on Ad Spend', icon: '📈' },
+                    { number: '4.2M', label: 'Total Impressions', icon: '👁️' },
+                    { number: '340%', label: 'Website Traffic Growth', icon: '🚀' }
+                ],
+                tech: ['LinkedIn Ads', 'Google Ads', 'HubSpot', 'Google Analytics', 'Hotjar'],
+                testimonial: {
+                    text: 'Their strategic approach turned our limited budget into a lead-generation machine. We exceeded our first-year goals in just three months. Exceptional partnership!',
+                    author: 'Michael Tan',
+                    position: 'Co-founder at TechStart Innovation',
+                    avatar: '👨‍💼'
+                }
+            },
+            {
+                id: 7,
+                category: 'website',
+                categoryLabel: 'WEBSITE DEVELOPMENT',
+                categoryBg: 'bg-purple-600',
+                title: 'Restaurant Website & SEO',
+                description: 'Full website and local SEO for restaurant chain',
+                image: 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=800&h=600&fit=crop',
+                client: 'Bella Italia Restaurants',
+                clientWebsite: 'https://bellaitaliarestaurants.com',
+                timeline: '7 weeks',
+                industry: 'Food & Beverage',
+                salesProof: {
+                    beforeRevenue: '2-3 reservations/day',
+                    afterRevenue: '25-30 reservations/day',
+                    revenueIncrease: '520%',
+                    roi: '640%',
+                    paybackPeriod: '4 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Multi-Location Management',
+                        description: 'Three locations requiring individual pages with unified branding and easy management.'
+                    },
+                    {
+                        title: 'Online Ordering Integration',
+                        description: 'Needed seamless third-party delivery integration while maintaining brand experience.'
+                    },
+                    {
+                        title: 'Local Competition',
+                        description: 'Competing with established restaurants dominating local search results.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Responsive Website Design',
+                        description: 'Mobile-first design with appetizing photography and easy navigation to menus and ordering.'
+                    },
+                    {
+                        title: 'Online Ordering System',
+                        description: 'Integrated online ordering with delivery partners while maintaining direct ordering option.'
+                    },
+                    {
+                        title: 'Multi-Location SEO',
+                        description: 'Optimized individual location pages with local keywords and Google Business Profiles.'
+                    }
+                ],
+                results: [
+                    { number: '420%', label: 'Online Orders Increase', icon: '🍕' },
+                    { number: 'Top 3', label: 'Local Map Rankings', icon: '📍' },
+                    { number: '7,300+', label: 'Monthly Website Visits', icon: '👥' },
+                    { number: '195%', label: 'Phone Call Increase', icon: '📞' }
+                ],
+                tech: ['WordPress', 'UberEats API', 'Google Maps', 'OpenTable', 'Yelp Integration'],
+                testimonial: {
+                    text: 'Our online presence went from nearly invisible to driving daily reservations and takeout orders. The website perfectly captures our brand, and we\'re consistently booked!',
+                    author: 'Giovanni Rossi',
+                    position: 'Owner at Bella Italia Restaurants',
+                    avatar: '👨‍🍳'
+                }
+            },
+            {
+                id: 8,
+                category: 'email',
+                categoryLabel: 'EMAIL MARKETING',
+                categoryBg: 'bg-pink-600',
+                title: 'E-commerce Email Strategy',
+                description: 'Email marketing strategy driving repeat purchases',
+                image: 'https://images.unsplash.com/photo-1596526131083-e8c633c948d2?w=800&h=600&fit=crop',
+                client: 'Outdoor Gear Collective',
+                clientWebsite: 'https://outdoorgearcollective.com',
+                timeline: '6 weeks',
+                industry: 'Outdoor Retail',
+                salesProof: {
+                    beforeRevenue: '$4..7K/month',
+                    afterRevenue: '$127K/month',
+                    revenueIncrease: '170%',
+                    roi: '485%',
+                    paybackPeriod: '4 weeks'
+                },
+                challenge: [
+                    {
+                        title: 'Low Repeat Purchase Rate',
+                        description: 'Strong new customer acquisition but customers weren\'t returning for second purchases.'
+                    },
+                    {
+                        title: 'Generic Email Blasts',
+                        description: 'Existing emails were one-size-fits-all promotions with poor engagement.'
+                    },
+                    {
+                        title: 'Underutilized Customer Data',
+                        description: 'Rich purchase data wasn\'t being leveraged for personalized marketing.'
+                    }
+                ],
+                solution: [
+                    {
+                        title: 'Behavioral Segmentation',
+                        description: 'Segmented customers by activity type, purchase history, and engagement level.'
+                    },
+                    {
+                        title: 'Product Recommendation Engine',
+                        description: 'Created personalized product recommendations based on browsing and purchase behavior.'
+                    },
+                    {
+                        title: 'Engagement Campaigns',
+                        description: 'Developed educational content series teaching customers about gear usage and maintenance.'
+                    }
+                ],
+                results: [
+                    { number: '186%', label: 'Repeat Purchase Rate', icon: '🔄' },
+                    { number: '43%', label: 'Email Open Rate', icon: '📧' },
+                    { number: '8.2%', label: 'Conversion Rate', icon: '💰' },
+                    { number: '$12.7K', label: 'Monthly Email Revenue', icon: '💵' }
+                ],
+                tech: ['Klaviyo', 'Shopify', 'Dynamic Content', 'Litmus', 'Google Analytics'],
+                testimonial: {
+                    text: 'Email became our secret weapon. Customers are engaged, buying more frequently, and our average order value has increased. This strategy pays for itself many times over.',
+                    author: 'Rachel Green',
+                    position: 'E-commerce Manager at Outdoor Gear Collective',
+                    avatar: '👩‍💼'
+                }
+            }
+        ];
+
+        // Initialize projects on page load
+        function initProjects() {
+            renderProjects(projects);
+            setupFilterButtons();
+        }
+
+        // Render projects to the grid - EXACT IMAGE STYLE
+        function renderProjects(projectsToRender) {
+            const grid = document.getElementById('projectsGrid');
+            grid.innerHTML = '';
+
+            projectsToRender.forEach((project) => {
+                const card = document.createElement('div');
+                card.className = 'relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 cursor-pointer group h-64';
+                card.onclick = () => openModal(project.id);
+
+                card.innerHTML = `
+                    <img src="${project.image}" alt="${project.title}" class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent"></div>
+                    <div class="absolute top-4 left-4">
+                        <span class="${project.categoryBg} text-white px-3 py-1 rounded-md text-xs font-bold uppercase tracking-wide">
+                            ${project.categoryLabel}
+                        </span>
+                    </div>
+                    <div class="absolute bottom-0 left-0 right-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2 leading-tight group-hover:text-blue-400 transition-colors">
+                            ${project.title}
+                        </h3>
+                        <p class="text-sm text-gray-200 leading-relaxed">
+                            ${project.description}
+                        </p>
+                    </div>
+                `;
+
+                grid.appendChild(card);
+            });
+        }
+
+        // Setup filter button functionality
+        function setupFilterButtons() {
+            const filterButtons = document.querySelectorAll('.filter-btn');
+
+            filterButtons.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    // Remove active state from all buttons
+                    filterButtons.forEach(b => {
+                        b.classList.remove('bg-blue-600', 'text-white');
+                        b.classList.add('bg-gray-100', 'text-gray-700');
+                    });
+
+                    // Add active state to clicked button
+                    this.classList.remove('bg-gray-100', 'text-gray-700');
+                    this.classList.add('bg-blue-600', 'text-white');
+
+                    // Filter projects
+                    const filter = this.dataset.filter;
+                    const filtered = filter === 'all' ? projects : projects.filter(p => p.category === filter);
+                    renderProjects(filtered);
+                });
+            });
+        }
+
+        // Open modal with project details
+        function openModal(projectId) {
+            const project = projects.find(p => p.id === projectId);
+            const modal = document.getElementById('projectModal');
+            const modalContent = document.getElementById('modalContent');
+
+            modalContent.innerHTML = `
+                <!-- Close Button -->
+                <button onclick="closeModal()" class="absolute top-6 right-6 w-12 h-12 bg-white rounded-full shadow-xl flex items-center justify-center text-gray-700 hover:bg-blue-600 hover:text-white transform hover:rotate-90 transition-all z-20">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2.5" d="M6 18L18 6M6 6l12 12"></path>
+                    </svg>
+                </button>
+                
+                <!-- Hero Image -->
+                <div class="relative">
+                    <img src="${project.image}" alt="${project.title}" class="w-full h-96 object-cover rounded-t-2xl">
+                    <div class="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent rounded-t-2xl"></div>
+                    <div class="absolute bottom-8 left-8 right-8 text-white">
+                        <span class="${project.categoryBg} text-white px-4 py-1.5 rounded-md text-sm font-bold uppercase tracking-wide inline-block mb-4">
+                            ${project.categoryLabel}
+                        </span>
+                        <h2 class="text-4xl lg:text-5xl font-bold mb-3 leading-tight">
+                            ${project.title}
+                        </h2>
+                        <p class="text-xl text-gray-100">
+                            ${project.description}
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- Modal Body -->
+                <div class="p-8 lg:p-12">
+                    
+                    <!-- Project Overview & Client Link -->
+                    <div class="mb-12 grid md:grid-cols-2 gap-8">
+                        <div class="bg-gray-50 rounded-xl p-8 border-l-4 border-blue-600">
+                            <h3 class="text-2xl font-bold text-gray-900 mb-6 flex items-center">
+                                <span class="text-3xl mr-3">📋</span>
+                                Project Overview
+                            </h3>
+                            <div class="space-y-3 text-gray-700">
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Client:</strong> ${project.client}</p>
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Industry:</strong> ${project.industry}</p>
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Timeline:</strong> ${project.timeline}</p>
+                                <p class="text-base"><strong class="font-semibold text-gray-900">Services:</strong> ${project.categoryLabel}</p>
+                                <a href="${project.clientWebsite}" target="_blank" class="inline-flex items-center text-blue-600 hover:text-blue-700 font-semibold mt-4 group">
+                                    <span>Visit Live Website</span>
+                                    <svg class="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        
+                        <!-- Sales Proof -->
+                        <div class="bg-gradient-to-br from-blue-600 to-purple-600 rounded-xl p-8 text-white">
+                            <h3 class="text-2xl font-bold mb-6 flex items-center">
+                                <span class="text-3xl mr-3">💰</span>
+                                Sales Proof & ROI
+                            </h3>
+                            <div class="space-y-4">
+                                <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-sm text-blue-100 mb-1">Before Investment</p>
+                                    <p class="text-2xl font-bold">${project.salesProof.beforeRevenue}</p>
+                                </div>
+                                <div class="bg-white/20 backdrop-blur-sm rounded-lg p-4">
+                                    <p class="text-sm text-blue-100 mb-1">After Implementation</p>
+                                    <p class="text-2xl font-bold">${project.salesProof.afterRevenue}</p>
+                                </div>
+                                <div class="grid grid-cols-2 gap-4">
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-xs text-blue-100 mb-1">Revenue Increase</p>
+                                        <p class="text-xl font-bold">${project.salesProof.revenueIncrease}</p>
+                                    </div>
+                                    <div class="bg-white/10 backdrop-blur-sm rounded-lg p-4">
+                                        <p class="text-xs text-blue-100 mb-1">ROI</p>
+                                        <p class="text-xl font-bold">${project.salesProof.roi}</p>
+                                    </div>
+                                </div>
+                                <div class="bg-green-500/20 backdrop-blur-sm rounded-lg p-3 border border-green-400/30">
+                                    <p class="text-sm">⚡ <strong>Payback Period:</strong> ${project.salesProof.paybackPeriod}</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- The Challenge -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">🎯</span>
+                            The Challenge
+                        </h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            ${project.challenge.map(item => `
+                                <div class="bg-gray-50 p-6 rounded-xl border-l-4 border-red-500 hover:shadow-lg hover:translate-x-2 transition-all">
+                                    <h4 class="text-lg font-bold text-gray-900 mb-3">${item.title}</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed">${item.description}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Our Solution -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">💡</span>
+                            Our Solution
+                        </h3>
+                        <div class="grid md:grid-cols-3 gap-6">
+                            ${project.solution.map(item => `
+                                <div class="bg-blue-50 p-6 rounded-xl border-l-4 border-blue-600 hover:shadow-lg hover:translate-x-2 transition-all">
+                                    <h4 class="text-lg font-bold text-gray-900 mb-3">${item.title}</h4>
+                                    <p class="text-gray-600 text-sm leading-relaxed">${item.description}</p>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Results & Impact -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">📈</span>
+                            Results & Impact
+                        </h3>
+                        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                            ${project.results.map(stat => `
+                                <div class="bg-gradient-to-br from-blue-600 to-purple-600 p-8 rounded-xl text-center text-white shadow-xl hover:shadow-2xl hover:-translate-y-2 transition-all">
+                                    <div class="text-4xl mb-3">${stat.icon}</div>
+                                    <div class="text-4xl font-extrabold mb-2">${stat.number}</div>
+                                    <div class="text-sm font-medium opacity-95">${stat.label}</div>
+                                </div>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Technology Stack -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">🛠️</span>
+                            Technology Stack
+                        </h3>
+                        <div class="flex flex-wrap gap-3">
+                            ${project.tech.map(tech => `
+                                <span class="bg-white border-2 border-gray-200 hover:border-blue-600 px-5 py-2.5 rounded-lg font-semibold text-gray-700 hover:bg-blue-50 transition-all">
+                                    ${tech}
+                                </span>
+                            `).join('')}
+                        </div>
+                    </div>
+                    
+                    <!-- Client Testimonial -->
+                    <div class="mb-12">
+                        <h3 class="text-3xl font-bold text-gray-900 mb-6 flex items-center">
+                            <span class="text-3xl mr-3">💬</span>
+                            Client Testimonial
+                        </h3>
+                        <div class="bg-gradient-to-r from-blue-50 to-purple-50 p-10 rounded-xl border-l-4 border-blue-600">
+                            <div class="flex items-start space-x-4">
+                                <div class="text-5xl">${project.testimonial.avatar}</div>
+                                <div class="flex-1">
+                                    <p class="text-xl text-gray-800 italic leading-relaxed mb-5">
+                                        "${project.testimonial.text}"
+                                    </p>
+                                    <div>
+                                        <p class="text-base font-bold text-blue-600">${project.testimonial.author}</p>
+                                        <p class="text-sm text-gray-600">${project.testimonial.position}</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- CTA Section -->
+                    <div class="bg-gradient-to-r from-gray-900 to-gray-800 rounded-2xl p-12 text-center text-white">
+                        <h3 class="text-3xl font-bold mb-4">Ready to Achieve Similar Results?</h3>
+                        <p class="text-lg text-gray-300 mb-8 max-w-2xl mx-auto">
+                            Let's discuss how we can transform your business with a custom strategy tailored to your goals.
+                        </p>
+                        <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                            <a href="./contact.html" class="inline-flex items-center justify-center bg-blue-600 hover:bg-blue-700 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all">
+                                Start Your Project
+                                <svg class="w-5 h-5 ml-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6"></path>
+                                </svg>
+                            </a>
+                            <a href="./contact.html" class="inline-flex items-center justify-center bg-transparent border-2 border-white hover:bg-white hover:text-gray-900 text-white px-10 py-4 rounded-lg font-bold text-lg transition-all">
+                                Schedule a Call
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            `;
+
+            // Show modal with animation
+            modal.classList.remove('hidden');
+            modal.classList.add('flex');
+            document.body.style.overflow = 'hidden';
+        }
+
+        // Close modal
+        function closeModal() {
+            const modal = document.getElementById('projectModal');
+            modal.classList.add('hidden');
+            modal.classList.remove('flex');
+            document.body.style.overflow = 'auto';
+        }
+
+        // Close modal on outside click
+        document.getElementById('projectModal').addEventListener('click', function (e) {
+            if (e.target === this) {
+                closeModal();
+            }
+        });
+
+        // Close modal on Escape key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'Escape') {
+                const modal = document.getElementById('projectModal');
+                if (modal.classList.contains('flex')) {
+                    closeModal();
+                }
+            }
+        });
+
+        // Initialize everything when DOM is ready
+        document.addEventListener('DOMContentLoaded', initProjects);
+    </script>
+
+    <!-- Footer -->
+    <footer class="bg-dark-900 text-white pt-16 pb-8">
+        <div class="container mx-auto px-6 lg:px-8">
+            <!-- Footer Grid -->
+            <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 mb-12">
+                <!-- Brand -->
+                <div>
+                    <div class="flex items-center space-x-3 mb-4">
+                        <div class="w-20 h-20 bg-primary rounded-full flex items-center justify-center">
+                            <img src="./WhatsApp Image 2026-01-18 at 2.03.04 PM.jpeg" alt="jkdigital solutions">
+                        </div>
+                        <span class="text-l font-bold text-white-900">JK Digital <br> <span
+                                style="color: grey;">Solutions</span>
+                        </span>
+                    </div>
+                    <p class="text-gray-400 text-sm leading-relaxed mb-6">
+                        Transforming businesses through innovative digital solutions. We deliver quality solutions that
+                        drive growth and success.
+                    </p>
+
+                    <!-- Newsletter -->
+                    <div>
+                        <h4 class="text-sm font-bold mb-3">Subscribe to Newsletter</h4>
+                        <form action="https://formspree.io/f/mvzzbekk" method="post">
+                            <div class="flex">
+
+                                <input type="email" placeholder="Email address" name="customer Mail:"
+                                    class="flex-1 bg-white bg-opacity-10 border border-white border-opacity-20 rounded-l-lg px-4 py-2.5 text-sm text-white placeholder-gray-400 focus:outline-none focus:border-primary">
+                                <button type="submit"
+                                    class="bg-primary hover:bg-primary-dark px-4 rounded-r-lg transition-colors">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Quick Links</h4>
+                    <ul class="space-y-3">
+                        <li><a href="index.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Home</a></li>
+                        <li><a href="about.html" class="text-gray-400 hover:text-white transition-colors text-sm">About
+                                Us</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Services</a></li>
+                        <li><a href="projects.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Portfolio</a></li>
+                        <li><a href="contact.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Our Services -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Our Services</h4>
+                    <ul class="space-y-3">
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Website
+                                Development</a></li>
+                        <li><a href="services.html" class="text-gray-400 hover:text-white transition-colors text-sm">SEO
+                                Optimization</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Digital
+                                Marketing & Advertising</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Social Media
+                                Marketing</a></li>
+                        <li><a href="services.html"
+                                class="text-gray-400 hover:text-white transition-colors text-sm">Shopify
+                                Marketing & Custoization</a></li>
+                    </ul>
+                </div>
+
+                <!-- Contact Us -->
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Contact Us</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-envelope mt-1 text-primary"></i>
+                            <span>jkdigitalssolutions@gmail.com</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-phone mt-1 text-primary"></i>
+                            <span>+1 (613) 927-2170</span>
+                        </li>
+                        <li class="flex items-start space-x-3 text-gray-400 text-sm">
+                            <i class="fas fa-map-marker-alt mt-1 text-primary"></i>
+                            <span>Location<br>Remote</span>
+                        </li>
+                    </ul>
+
+                    <!-- Social Links -->
+                    <!-- <div class="flex space-x-3 mt-6">
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#"
+                            class="w-10 h-10 bg-white bg-opacity-10 rounded-lg flex items-center justify-center hover:bg-primary transition-colors">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </div> -->
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="border-t border-gray-800 pt-8">
+                <div class="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+                    <p class="text-gray-500 text-sm text-center md:text-left">© 2026 JK Digital Solutions. All rights
+                        reserved.</p>
+                    <div class="flex flex-wrap justify-center gap-6">
+                        <a href="policies.html" class="text-gray-500 hover:text-white text-sm transition-colors">Privacy
+                            Policy</a>
+                        <a href="terms.html" class="text-gray-500 hover:text-white text-sm transition-colors">Terms &
+                            Conditions</a>
+                        <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Designed by</span>
+                            <span class="text-orange-500 font-semibold">JKDIGITALSOULTIONS</span>
+                        </a>
+                        <!-- <a href="#"
+                            class="text-gray-500 hover:text-white text-sm transition-colors flex items-center space-x-2">
+                            <span>Hire us on</span>
+                            <span class="text-green-500 font-semibold">Fiverr</span>
+                        </a> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Trust Badge -->
+    <div id="trustBadge" class="fixed bottom-5 left-5 right-0 bg-white shadow-2xl border-t border-gray-200 z-50"
+        style="animation: slideUp 0.5s ease-out; width: fit-content; border-radius: 10px;">
+        <div class="container mx-auto px-6 py-4">
+            <div class="flex flex-col sm:flex-row items-center justify-between space-y-4 sm:space-y-0 sm:space-x-4">
+                <div class="flex items-start space-x-3">
+                    <div class="w-10 h-10 bg-green-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                        <i class="fas fa-shield-alt text-green-600 text-lg"></i>
+                    </div>
+                    <div>
+                        <p class="text-sm text-gray-700">
+                            <strong class="font-semibold">✓ Verified & Trusted</strong><br>
+                            <span class="text-xs">Secure Payments</span>
+                        </p>
+                    </div>
+                </div>
+                <button id="closeTrustBadge" class="text-gray-400 hover:text-gray-600 text-xl">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Scroll to Top Button -->
+    <button id="scrollToTop"
+        class="fixed bottom-8 right-8 w-14 h-14 bg-primary text-white rounded-full shadow-2xl hover:bg-primary-dark transition-all opacity-0 invisible hover:-translate-y-1 z-40">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+            const icon = mobileMenuBtn.querySelector('i');
+            icon.classList.toggle('fa-bars');
+            icon.classList.toggle('fa-times');
+        });
+
+        // Close mobile menu when clicking on links
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+                const icon = mobileMenuBtn.querySelector('i');
+                icon.classList.remove('fa-times');
+                icon.classList.add('fa-bars');
+            });
+        });
+
+        // Portfolio Filter Functionality
+        const filterButtons = document.querySelectorAll('.filter-button');
+        const projectItems = document.querySelectorAll('.project-item');
+
+        filterButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                const filter = button.getAttribute('data-filter');
+
+                // Update active button
+                filterButtons.forEach(btn => {
+                    btn.classList.remove('active', 'bg-primary', 'text-white');
+                    btn.classList.add('bg-gray-100', 'text-gray-700');
+                });
+                button.classList.add('active', 'bg-primary', 'text-white');
+                button.classList.remove('bg-gray-100', 'text-gray-700');
+
+                // Filter projects with animation
+                projectItems.forEach(item => {
+                    const category = item.getAttribute('data-category');
+
+                    if (filter === 'all' || category === filter) {
+                        item.style.display = 'block';
+                        setTimeout(() => {
+                            item.style.opacity = '1';
+                            item.style.transform = 'translateY(0)';
+                        }, 10);
+                    } else {
+                        item.style.opacity = '0';
+                        item.style.transform = 'translateY(20px)';
+                        setTimeout(() => {
+                            item.style.display = 'none';
+                        }, 300);
+                    }
+                });
+            });
+        });
+
+        // Scroll Animations
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animated');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.animate-on-scroll').forEach(el => {
+            observer.observe(el);
+        });
+
+        // Scroll to Top Button
+        const scrollToTopBtn = document.getElementById('scrollToTop');
+
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 400) {
+                scrollToTopBtn.classList.remove('opacity-0', 'invisible');
+                scrollToTopBtn.classList.add('opacity-100', 'visible');
+            } else {
+                scrollToTopBtn.classList.add('opacity-0', 'invisible');
+                scrollToTopBtn.classList.remove('opacity-100', 'visible');
+            }
+        });
+
+        scrollToTopBtn.addEventListener('click', () => {
+            window.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        });
+
+        // Smooth Scroll for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Trust Badge
+        const trustBadge = document.getElementById('trustBadge');
+        const closeTrustBadge = document.getElementById('closeTrustBadge');
+
+        // Check if user has already closed the badge
+        if (sessionStorage.getItem('trustBadgeClosed')) {
+            trustBadge.style.display = 'none';
+        }
+
+        closeTrustBadge.addEventListener('click', () => {
+            trustBadge.style.animation = 'slideDown 0.5s ease-out';
+            setTimeout(() => {
+                trustBadge.style.display = 'none';
+            }, 500);
+            sessionStorage.setItem('trustBadgeClosed', 'true');
+        });
+
+        // Newsletter Form
+        const newsletterButton = document.querySelector('footer button');
+        if (newsletterButton) {
+            newsletterButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                const input = e.target.closest('div').querySelector('input');
+                if (input.value) {
+                    alert('Thank you for subscribing!');
+                    input.value = '';
+                }
+            });
+        }
+
+        // Add slideDown animation
+        const style = document.createElement('style');
+        style.textContent = `
+            @keyframes slideUp {
+                from { transform: translateY(100%); }
+                to { transform: translateY(0); }
+            }
+            @keyframes slideDown {
+                from { transform: translateY(0); }
+                to { transform: translateY(100%); }
+            }
+        `;
+        document.head.appendChild(style);
+    </script>
+</body>
+
+</html>
