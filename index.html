@@ -88,6 +88,33 @@
     </script>
 
     <style>
+        @keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+@keyframes spinReverse {
+  from { transform: rotate(360deg); }
+  to { transform: rotate(0deg); }
+}
+
+@keyframes pulseScale {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+.animate-spin-slow {
+  animation: spinSlow 14s linear infinite; /* infinite loop */
+}
+
+.animate-spin-reverse {
+  animation: spinReverse 10s linear infinite; /* infinite loop */
+}
+
+.animate-pulse-scale {
+  animation: pulseScale 4s ease-in-out infinite; /* infinite loop */
+}
+
         .animate-on-scroll {
             opacity: 0;
             transform: translateY(30px);
@@ -260,14 +287,29 @@
 
                 <!-- Right Content - Image -->
                 <div class="relative animate-fade-in-up">
-                    <div class="relative rounded-3xl overflow-hidden shadow-2xl animate-float">
-                        <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?w=700&h=800&fit=crop"
-                            alt="Team Collaboration" class="w-full h-auto">
-                    </div>
+                    <div class="relative flex items-center justify-center w-72 h-72 mx-auto">
+
+                            <!-- Outer rotating dotted ring -->
+                            <div
+                                class="absolute w-[22rem] h-[22rem] rounded-full border-2 border-dashed border-gray-400 animate-spin-slow">
+                            </div>
+
+                            <!-- Inner rotating dotted ring -->
+                            <div
+                                class="absolute w-[20rem] h-[20rem] rounded-full border-2 border-dotted border-gray-600 animate-spin-reverse">
+                            </div>
+
+                            <!-- Image container -->
+                            <div class="relative w-72 h-72 rounded-full overflow-hidden shadow-2xl animate-pulse-scale">
+                                <img src="photo-1518770660439-4636190af475.jpg" alt="Digital Growth"
+                                    class="w-full h-full object-cover rounded-full" />
+                            </div>
+
+                        </div>
 
                     <!-- Floating Badge 1 -->
                     <div
-                        class="absolute top-8 -right-4 lg:right-0 bg-white px-5 py-4 rounded-2xl shadow-2xl animate-float hidden sm:flex items-center space-x-3">
+                        class="absolute top-8 right-[-100px] bg-white px-5 py-4 rounded-2xl shadow-2xl animate-float hidden sm:flex items-center space-x-3">
                         <div class="w-11 h-11 bg-blue-100 rounded-xl flex items-center justify-center">
                             <i class="fas fa-rocket text-primary text-lg"></i>
                         </div>
@@ -278,7 +320,7 @@
                     </div>
 
                     <!-- Floating Badge 2 -->
-                    <div class="absolute bottom-12 -left-4 lg:left-0 bg-white px-5 py-4 rounded-2xl shadow-2xl animate-float hidden sm:flex items-center space-x-3"
+                    <div class="absolute bottom-12 left-[-100px] bg-white px-5 py-4 rounded-2xl shadow-2xl animate-float hidden sm:flex items-center space-x-3"
                         style="animation-delay: 1s;">
                         <div class="w-11 h-11 bg-green-100 rounded-xl flex items-center justify-center">
                             <i class="fas fa-check-circle text-green-500 text-lg"></i>
@@ -2111,3 +2153,4 @@
 
 
 </html>
+
