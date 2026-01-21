@@ -335,7 +335,7 @@
                 <div class="container mx-auto px-6 lg:px-8">
                     <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                         <!-- Service 1: Website Development -->
-                        <div onclick="openModal('website')"
+                        <div onclick="openModals('website')"
                             class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group"
                             id="openModalBtn">
                             <div
@@ -356,7 +356,7 @@
                         </div>
 
                         <!-- Service 2: SEO Optimization -->
-                        <div onclick="openModal('seo')"
+                        <div onclick="openModals('seo')"
                             class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
                             <div
                                 class="w-16 h-16 bg-orange-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -375,7 +375,7 @@
                         </div>
 
                         <!-- Service 3: Shopify Marketing -->
-                        <div onclick="openModal('shopify')"
+                        <div onclick="openModals('shopify')"
                             class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
                             <div
                                 class="w-16 h-16 bg-green-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -395,7 +395,7 @@
                         </div>
 
                         <!-- Service 4: Digital Marketing -->
-                        <div onclick="openModal('marketing')"
+                        <div onclick="openModals('marketing')"
                             class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
                             <div
                                 class="w-16 h-16 bg-pink-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -415,7 +415,7 @@
                         </div>
 
                         <!-- Service 5: Email Marketing -->
-                        <div onclick="openModal('email')"
+                        <div onclick="openModals('email')"
                             class="bg-white border border-gray-200 rounded-3xl p-8 hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 animate-on-scroll group">
                             <div
                                 class="w-16 h-16 bg-purple-500 rounded-2xl flex items-center justify-center mb-6 group-hover:scale-110 transition-transform">
@@ -1040,7 +1040,7 @@
         <div class="modal-content bg-white rounded-3xl max-w-3xl w-full max-h-[90vh] overflow-y-auto shadow-2xl">
 
             <!-- Modal Content -->
-            <div class="p-8" id="modalContent">
+            <div class="p-8" id="modalContents">
                 <!-- Content will be injected here -->
             </div>
         </div>
@@ -1184,10 +1184,10 @@
         };
 
         // OPEN SERVICE MODAL
-        function openModal(service) {
+        function openModals(service) {
             const data = serviceData[service];
             const modal = document.getElementById('serviceModal');
-            const content = document.getElementById('modalContent');
+            const content = document.getElementById('modalContents');
 
             content.innerHTML = `
                     <!-- Close Button -->
@@ -1251,7 +1251,7 @@
         }
 
         // // CLOSSE SERVICE MODAL
-        function closeModal() {
+        function closeModals() {
             const modal = document.getElementById('serviceModal');
             modal.classList.add('hidden');
             modal.classList.remove('flex');
@@ -1261,14 +1261,14 @@
         // Close modal on overlay click
         document.getElementById('serviceModal').addEventListener('click', function (e) {
             if (e.target === this) {
-                closeModal();
+                closeModals();
             }
         });
 
         // Close modal on Escape key
         document.addEventListener('keydown', function (e) {
             if (e.key === 'Escape') {
-                closeModal();
+                closeModals();
             }
         });
 
@@ -2108,5 +2108,6 @@
 
     </script>
 </body>
+
 
 </html>
